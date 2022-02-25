@@ -27,9 +27,3 @@ MEDIA_TYPE_CHOICES = (
     (1, "Image"),
     (2, "Video"),
 )
-
-# Transaction types
-TRANSACTION_TYPE_CHOICES = (
-    (1, "Buy"),
-    (2, "Sell"),
-)
