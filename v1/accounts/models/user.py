@@ -7,6 +7,7 @@ from v1.accounts.managers.user_manager import UserManager
 
 class User(AbstractBaseUser, PermissionsMixin):
     manager = UserManager()
+    id = models.AutoField(primary_key=True)
     type_choices = models.CharField(
         max_length=31,
         choices=USER_TYPE_CHOICES,
