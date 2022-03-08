@@ -22,6 +22,7 @@ urlpatterns = [
     path('', include('v1.product_review_votings.urls')),
     path('', include('v1.product_questions.urls')),
     path('', include('v1.customer_orders.urls')),
+    path('', include('v1.product_transactions.urls')),
 
     # Core
     path('admin/', admin.site.urls),
