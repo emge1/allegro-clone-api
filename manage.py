@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 import os
 import sys
-from config.environment import DJANGO_SETTINGS_MODULE
+from config.environment import SETTINGS_MODULE
 from django import setup
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', DJANGO_SETTINGS_MODULE)
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', SETTINGS_MODULE)
     setup()
     try:
         from django.core.management import execute_from_command_line
