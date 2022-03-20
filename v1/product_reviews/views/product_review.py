@@ -70,7 +70,7 @@ class ProductReviewDetail(APIView):
         product_review = get_object_or_404(ProductReview, pk=product_review_id)
         if not is_staff(request.user):
             return Response({
-                constants.ERROR: constants.PERMISSION_MERCHANT_REQUIRED
+                constants.ERROR: constants.PERMISSION_STAFF_REQUIRED
             }, status=status.HTTP_401_UNAUTHORIZED)
         product_review.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
