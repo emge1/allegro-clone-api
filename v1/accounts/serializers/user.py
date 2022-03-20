@@ -4,7 +4,7 @@ from rest_framework.authtoken.models import Token
 from v1.accounts.models.profile import Profile
 from v1.accounts.models.user import User
 from v1.utils import constants
-from v1.utils.permissions import is_administrator, is_staff
+from v1.utils.permissions import is_administrator, is_staff, is_merchant, is_customer
 from .profile import ProfileSerializer
 
 
@@ -14,7 +14,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'email', 'first_name', 'last_name', 'profile', 'role')
+        fields = ('id', 'email', 'first_name', 'last_name', 'profile', 'type_choice')
 
     @staticmethod
     def get_profile(user):
@@ -34,7 +34,11 @@ class UserSerializer(serializers.ModelSerializer):
         if is_administrator(user):
             return constants.USER_ROLE_ADMINISTRATOR
         if is_staff(user):
-            return constants.USER_ROLE_MODERATOR
+            return constants.USER_ROLE_STAFF
+        if is_merchant(user):
+            return constants.USER_ROLE_STAFF
+        if is_customer(user):
+            return constants.USER_ROLE_STAFF
 
 
 class UserSerializerCreate(serializers.ModelSerializer):
@@ -76,7 +80,7 @@ class UserSerializerLogin(UserSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'email', 'first_name', 'last_name', 'profile', 'role', 'token')
+        fields = ('id', 'email', 'first_name', 'last_name', 'profile', 'type_choice', 'token')
 
 
 class UserSerializerUpdate(serializers.ModelSerializer):

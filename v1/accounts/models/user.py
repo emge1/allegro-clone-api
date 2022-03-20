@@ -6,17 +6,17 @@ from v1.accounts.managers.user_manager import UserManager
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    manager = UserManager()
+    objects = UserManager()
     id = models.AutoField(primary_key=True)
-    type_choices = models.CharField(
-        max_length=31,
+    email = models.EmailField(max_length=255, unique=True)
+    first_name = models.CharField(max_length=255)
+    last_name = models.CharField(max_length=255)
+    type_choice = models.CharField(
+        max_length=1,
         choices=USER_TYPE_CHOICES,
         default=4
     )
     date_joined = models.DateTimeField(auto_now_add=True)
-    email = models.EmailField(max_length=255, unique=True)
-    first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
     is_active = models.BooleanField(default=True)
 
     USERNAME_FIELD = 'email'
