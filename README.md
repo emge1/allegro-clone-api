@@ -4,29 +4,37 @@ Allegro-clone is a clone of a popular e-commerce website.
 
 # Project setup
 
-Clone the repository and open it in IDE (recommended: PyCharm):
+Clone the repository (in your terminal):
 
-`git clone https://github.com/emge1/allegro-clone-api.git`
+```
+git clone https://github.com/emge1/allegro-clone-api.git
+```
 
 Create virtual environment and activate it in IDE (recommended IDE: PyCharm):
 
 ```
+cd allegro-clone-api
 python -m venv venv
 venv\Scripts\activate.bat
 ```
 
-Install the required packages:
+install the required packages:
 
-`pip install -r requirements/local.txt`
+```
+pip install -r requirements/local.txt
+```
 
-and initialize database:
+initialize database:
 
 ```
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-# Authentication
+and run:
+```
+python manage.py runserver
+```
 
 # API documentation
 
