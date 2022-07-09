@@ -1,6 +1,6 @@
 djangorestframework==3.13.1
-django==4.0.2
+django==4.0.6
 python-decouple
 django-rest-swagger==2.2.0
-wagtail==2.16.1
 django-debug-toolbar==3.2.4
+django-cors-headers==3.13.0
