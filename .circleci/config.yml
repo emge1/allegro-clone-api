@@ -2,25 +2,16 @@ version: 2
 jobs:
   build:
     docker:
-<<<<<<< HEAD
-=======
-      # specify the version you desire here
->>>>>>> origin/main
       - image: circleci/python:3.9.2
     working_directory: ~/repo=
     steps:
     - checkout
-<<<<<<< HEAD
     - restore_cache:
         keys:
         - v1-dependencies-{{ checksum "config/requirements/local.txt" }}
-=======
-    # Download and cache dependencies
     - restore_cache:
         keys:
         - v1-dependencies-{{ checksum "config/requirements/local.txt" }}
-        # fallback to using the latest cache if no exact match is found
->>>>>>> origin/main
         - v1-dependencies-
 
     - run:
