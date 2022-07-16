@@ -5,7 +5,6 @@ from rest_framework.documentation import include_docs_urls
 
 
 urlpatterns = [
-
     # API (v1)
     path('', include('v1.accounts.urls')),
     path('', include('v1.user_roles.urls')),
@@ -26,7 +25,7 @@ urlpatterns = [
 
     # Core
     path('admin/', admin.site.urls),
-    path('docs/', include_docs_urls(title='Allegro Clone clone')),
+    path('docs/', include_docs_urls(title='Allegro clone')),
 ]
 
 if settings.DEBUG:
