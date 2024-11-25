@@ -1,6 +1,7 @@
 from django.urls import path
 from .views.login import LoginView
 from .views.logout import LogoutView
+from .views.register import RegisterView
 from .views.profile import ProfileView, ProfileDetail
 from .views.reset_password import ResetPasswordView
 from .views.update_password import UpdatePasswordView
@@ -12,6 +13,9 @@ urlpatterns = [
     # Login / logout
     path('login/', LoginView.as_view()),
     path('logout/', LogoutView.as_view()),
+
+    # Register
+    path('register/', RegisterView.as_view()),
 
     # Password management
     path('reset_password/', ResetPasswordView.as_view()),
