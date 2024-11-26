@@ -9,8 +9,7 @@ from rest_framework.response import Response
 class LogoutView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
-    @staticmethod
-    def get(request):
+    def post(self, request):
         """
         Remove API token
         """
