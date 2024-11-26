@@ -27,3 +27,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CORS_ORIGIN_WHITELIST = ['https://app.example.com']
 CSRF_TRUSTED_ORIGINS = ['https://app.example.com']
+
+LOGGING['loggers']['django']['level'] = 'ERROR'
+LOGGING['handlers']['file']['filename'] = '/var/log/django/django_production.log'
