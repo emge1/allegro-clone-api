@@ -30,7 +30,6 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh """
-                    . ${VENV_DIR}/bin/activate
                     pytest --junitxml=test-reports/results.xml
                 """
             }
@@ -57,5 +56,6 @@ pipeline {
         }
         failure {
             echo 'Pipeline unsuccessfull'
+        }
     }
 }
