@@ -1,4 +1,3 @@
-from django.shortcuts import get_object_or_404
 from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError
 from rest_framework.views import APIView
@@ -8,7 +7,6 @@ from v1.accounts.models.reset_password_code import ResetPasswordCode
 from v1.utils import constants
 
 
-# reset_password
 class ResetPasswordView(APIView):
     authentication_classes = ()
     permission_classes = ()
@@ -22,8 +20,11 @@ class ResetPasswordView(APIView):
         code = request.data.get('code')
         password = request.data.get('password')
 
+        reset_password_code = ResetPasswordCode.objects.filter(code=code).first()
+        if not reset_password_code:
+            return Response({constants.ERROR: "Invalid reset code"}, status=status.HTTP_400_BAD_REQUEST)
+
         try:
-            reset_password_code = get_object_or_404(ResetPasswordCode, code=code)
             user = reset_password_code.user
             validate_password(password)
             user.set_password(password)
