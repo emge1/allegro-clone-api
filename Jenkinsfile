@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'python:3.11.7' }
-    }
+    agent any
     environment {
         COMPOSE_FILE = "docker-compose.yml"
         REPO_URL = "https://github.com/emge1/allegro-clone-api.git"
@@ -30,7 +28,6 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh """
-                    . ${VENV_DIR}/bin/activate
                     pytest --junitxml=test-reports/results.xml
                 """
             }
@@ -57,5 +54,6 @@ pipeline {
         }
         failure {
             echo 'Pipeline unsuccessfull'
+        }
     }
 }
