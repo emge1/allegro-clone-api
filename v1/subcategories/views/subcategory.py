@@ -9,16 +9,22 @@ from v1.utils import constants
 from v1.utils.permissions import is_administrator
 
 
-# subcategories
+# subcategories (default) or categories/category_id/subcategories
 class SubcategoryView(APIView):
 
     @staticmethod
-    def get(request):
+    def get(request, **kwargs):
         """
         List subcategories
         """
 
-        subcategories = Subcategory.objects.all()
+        category_id = kwargs['category_id']
+        if category_id:
+            subcategories = Subcategory.objects.filter(category_id=category_id, is_active=True)
+            if not subcategories.exists():
+                raise ValueError("No subcategories found for this category.")
+        else:
+            subcategories = Subcategory.objects.all()
         return Response(SubcategorySerializer(subcategories, many=True).data)
 
     @staticmethod
