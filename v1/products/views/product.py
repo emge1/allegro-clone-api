@@ -8,16 +8,26 @@ from v1.utils import constants
 from v1.utils.permissions import is_merchant
 
 
-# products
+# products (including category/category_id/products)
 class ProductView(APIView):
 
     @staticmethod
-    def get(request):
+    def get(request, **kwargs):
         """
         List products
         """
 
-        products = Product.objects.all()
+        category_id = kwargs.get('category_id')
+        if category_id:
+            products = Product.objects.filter(subcategories_id__category_id=category_id, is_active=True)
+
+            if not products.exists():
+                return Response(
+                    {"error": "No products found for this category."},
+                    status=status.HTTP_404_NOT_FOUND
+                )
+        else:
+            products = Product.objects.all()
         return Response(ProductSerializer(products, many=True).data)
 
     @staticmethod
