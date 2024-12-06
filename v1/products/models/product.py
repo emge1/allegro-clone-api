@@ -11,6 +11,7 @@ class Product(models.Model):
     brand = models.CharField(max_length=255)
     max_price = models.CharField(max_length=255)
     discount_price = models.CharField(max_length=255)
+    thumbnail = models.ImageField(blank=True)
     description = models.TextField()
     long_description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
