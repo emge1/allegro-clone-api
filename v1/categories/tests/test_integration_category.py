@@ -41,7 +41,7 @@ class TestCategoryViews(APITestCase):
         self.product1 = Product.objects.create(
             name="Product 1",
             max_price=99.99,
-            thumbnail="thumbnail44.jpg",
+            thumbnail="thumbnail4.jpg",
             is_active=True,
             subcategories_id=self.subcategory1,
             added_by=self.merchant
@@ -68,14 +68,16 @@ class TestCategoryViews(APITestCase):
         self.assertEqual(response.json()[2]["thumbnail"], "/media/thumbnail3.jpg")
 
     def test_get_products(self):
-        response = self.client.get(f"/categories/{self.category.id}/products")
+        response = self.client.get(f"/categories/{self.category.id}/products/")
+        print(f"Response JSON: {response.json()}")  # Debuguj odpowiedź API
+        print(f"Status Code: {response.status_code}")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(len(response.json()), 2)
-        self.assertEqual(response.json()[0]["title"], "Product 1")
-        self.assertEqual(response.json()[0]["price"], 99.99)
+        self.assertEqual(response.json()[0]["name"], "Product 1")
+        self.assertEqual(response.json()[0]["max_price"], '99.99')
         self.assertEqual(response.json()[0]["thumbnail"], "/media/thumbnail4.jpg")
-        self.assertEqual(response.json()[1]["title"], "Product 2")
-        self.assertEqual(response.json()[1]["price"], 99.99)
+        self.assertEqual(response.json()[1]["name"], "Product 2")
+        self.assertEqual(response.json()[1]["max_price"], '99.99')
         self.assertEqual(response.json()[1]["thumbnail"], "/media/thumbnail5.jpg")
 
 
