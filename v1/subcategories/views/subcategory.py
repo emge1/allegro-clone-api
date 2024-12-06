@@ -18,7 +18,7 @@ class SubcategoryView(APIView):
         List subcategories
         """
 
-        category_id = kwargs['category_id']
+        category_id = kwargs.get('category_id')
         if category_id:
             subcategories = Subcategory.objects.filter(category_id=category_id, is_active=True)
             if not subcategories.exists():
