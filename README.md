@@ -78,17 +78,23 @@ Access the application at http://127.0.0.1:8000/.
 
 # Dependencies
 ## Backend
+### Base
 * Django
 * Django Rest Framework
 * Python Decouple
 * Pillow
 * Django Cors Headers
+* Prometheus Client
+
+### Local
 * Django Debug Toolbar
 * Pytest
-* Pytest Dajngo
+* Pytest Django
 * Pytest Cov
 * Pytest JUnitXML
 * SQLite (local)
+
+### Prodcution
 * Postgres (production)
 
 ## Frontend
