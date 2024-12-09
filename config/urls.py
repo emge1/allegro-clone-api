@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from rest_framework.documentation import include_docs_urls
+from v1.prometheus.views import metrics_view
 
 
 urlpatterns = [
@@ -26,6 +27,9 @@ urlpatterns = [
     # Core
     path('admin/', admin.site.urls),
     path('docs/', include_docs_urls(title='Allegro clone')),
+
+    # Prometheus
+    path('metrics/', metrics_view)
 ]
 
 if settings.DEBUG:
