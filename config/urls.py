@@ -9,6 +9,7 @@ urlpatterns = [
     # API (v1)
     path('', include('v1.accounts.urls')),
     path('', include('v1.user_roles.urls')),
+    path('', include('v1.carts.urls')),
     path('', include('v1.categories.urls')),
     path('', include('v1.subcategories.urls')),
     path('', include('v1.products.urls')),
