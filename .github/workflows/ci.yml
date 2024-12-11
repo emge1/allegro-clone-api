@@ -30,6 +30,7 @@ jobs:
       - name: Run Tests
         run: |
           docker run --rm \
+            -e SECRET_KEY=${{ secrets.SECRET_KEY }} \
             -v ${{ github.workspace }}:/workspace \
             -w /workspace \
             ci-cd-image \
@@ -47,11 +48,19 @@ jobs:
 
       - name: Clean up Docker
         if: always()
-        run: docker-compose down || true
+        run: |
+          docker stop $(docker ps -q) || true
+          docker rm $(docker ps -aq) || true
+          docker network prune -f
 
       - name: Clean Workspace
         if: always()
-        run: rm -rf *
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/workspace \
+            -w /workspace \
+            ci-cd-image \
+            sh -c "rm -rf /workspace/*"
 
       - name: Success Message
         if: success()
