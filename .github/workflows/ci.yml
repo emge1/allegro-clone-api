@@ -9,8 +9,7 @@ on:
       - main
 
 env:
-  COMPOSE_FILE: docker-compose.yml
-  REPO_URL: https://github.com/emge1/allegro-clone-api.git
+  REPO_URL: emge1/allegro-clone-api
   REPO_BRANCH: main
 
 jobs:
@@ -24,14 +23,21 @@ jobs:
           repository: ${{ env.REPO_URL }}
           ref: ${{ env.REPO_BRANCH  }}
 
-      - name: Start Services with Docker Compose
+      - name: Build Docker Image
         run: |
-          docker-compose down || true
-          docker-compose up -d web
+          docker build --build-arg REQUIREMENTS=requirements/local.txt -t ci-cd-image .
 
       - name: Run Tests
         run: |
-          pytest --junitxml=test-reports/results.xml
+          docker run --rm \
+            -v ${{ github.workspace }}:/workspace \
+            -w /workspace \
+            ci-cd-image \
+            sh -c "
+              python manage.py makemigrations &&
+              python manage.py migrate &&
+              pytest --junitxml=test-reports/results.xml
+            "
 
       - name: Upload Test Report
         uses: actions/upload-artifact@v3
@@ -39,27 +45,18 @@ jobs:
           name: test-reports
           path: test-reports/results.xml
 
-      - name: Annotate Test Results
-        uses: dorny/test-reporter@v1
-        with:
-          name: Test Results
-          path: test-reports/results.xml
-          reporter: junit
+      - name: Clean up Docker
+        if: always()
+        run: docker-compose down || true
 
-    post:
-      always:
-        steps:
-          - name: Clean up Docker
-            run: docker-compose down || true
-          - name: Clean Workspace
-            run: rm -rf *
+      - name: Clean Workspace
+        if: always()
+        run: rm -rf *
 
-      success:
-        steps:
-          - name: Success Message
-            run: echo "Pipeline successfully completed"
+      - name: Success Message
+        if: success()
+        run: echo "Pipeline successfully completed"
 
-      failure:
-        steps:
-          - name: Failure Message
-            run: echo "Pipeline unsuccessfull"
+      - name: Failure Message
+        if: failure()
+        run: echo "Pipeline unsuccessful"
