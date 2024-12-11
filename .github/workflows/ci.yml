@@ -17,49 +17,49 @@ jobs:
   pipeline:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
-      with:
-        repository: ${{ env.REPO_URL }}
-        ref: ${{ env.REPO_BRANCH  }}
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ env.REPO_URL }}
+          ref: ${{ env.REPO_BRANCH  }}
 
-    - name: Start Services with Docker Compose
-      run: |
-        docker-compose down || true
-        docker-compose up -d web
+      - name: Start Services with Docker Compose
+        run: |
+          docker-compose down || true
+          docker-compose up -d web
 
-    - name: Run Tests
-      run: |
-        pytest --junitxml=test-reports/results.xml
+      - name: Run Tests
+        run: |
+          pytest --junitxml=test-reports/results.xml
 
-    - name: Upload Test Report
-      uses: actions/upload-artifact@v3
-      with:
-        name: test-reports
-        path: test-reports/results.xml
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-reports
+          path: test-reports/results.xml
 
-    - name: Annotate Test Results
-      uses: dorny/test-reporter@v1
-      with:
-        name: Test Results
-        path: test-reports/results.xml
-        reporter: junit
+      - name: Annotate Test Results
+        uses: dorny/test-reporter@v1
+        with:
+          name: Test Results
+          path: test-reports/results.xml
+          reporter: junit
 
-  post:
-    always:
-      steps:
-        - name: Clean up Docker
-          run: docker-compose down || true
-        - name: Clean Workspace
-          run: rm -rf *
+    post:
+      always:
+        steps:
+          - name: Clean up Docker
+            run: docker-compose down || true
+          - name: Clean Workspace
+            run: rm -rf *
 
-    success:
-      steps:
-        - name: Success Message
-          run: echo "Pipeline successfully completed"
+      success:
+        steps:
+          - name: Success Message
+            run: echo "Pipeline successfully completed"
 
-    failure:
-      steps:
-        - name: Failure Message
-          run: echo "Pipeline unsuccessfull"
+      failure:
+        steps:
+          - name: Failure Message
+            run: echo "Pipeline unsuccessfull"
