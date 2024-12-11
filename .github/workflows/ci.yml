@@ -9,7 +9,6 @@ on:
       - main
 
 env:
-  COMPOSE_FILE: docker-compose.yml
   REPO_URL: emge1/allegro-clone-api
   REPO_BRANCH: main
 
@@ -24,14 +23,21 @@ jobs:
           repository: ${{ env.REPO_URL }}
           ref: ${{ env.REPO_BRANCH  }}
 
-      - name: Start Services with Docker Compose
+      - name: Build Docker Image
         run: |
-          docker-compose down || true
-          docker-compose up -d web
+          docker build --build-arg REQUIREMENTS=requirements/local.txt -t ci-cd-image .
 
       - name: Run Tests
         run: |
-          pytest --junitxml=test-reports/results.xml
+          docker run --rm \
+            -v ${{ github.workspace }}:/workspace \
+            -w /workspace \
+            ci-cd-image \
+            sh -c "
+              python manage.py makemigrations &&
+              python manage.py migrate &&
+              pytest --junitxml=test-reports/results.xml
+            "
 
       - name: Upload Test Report
         uses: actions/upload-artifact@v3
