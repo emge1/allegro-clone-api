@@ -55,7 +55,12 @@ jobs:
 
       - name: Clean Workspace
         if: always()
-        run: rm -rf *
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/workspace \
+            -w /workspace \
+            ci-cd-image \
+            sh -c "rm -rf /workspace/*"
 
       - name: Success Message
         if: success()
