@@ -1,3 +1,4 @@
+
 from django.contrib.auth import get_user_model
 from rest_framework.test import APITestCase
 from v1.carts.models.cart import Cart
@@ -21,3 +22,4 @@ class CartTestCase(APITestCase):
         data = response.json()
         self.assertIn('items', data)
         self.assertEqual(data['user'], customer.user.id)
+
