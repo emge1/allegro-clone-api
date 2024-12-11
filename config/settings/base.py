@@ -13,6 +13,7 @@ INSTALLED_APPS = [
     # API
     'v1.accounts.apps.AccountsConfig',
     'v1.user_roles.apps.UserRolesConfig',
+    'v1.carts.apps.CartsConfig',
     'v1.categories.apps.CategoriesConfig',
     'v1.subcategories.apps.SubcategoriesConfig',
     'v1.products.apps.ProductsConfig',
