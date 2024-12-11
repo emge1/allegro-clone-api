@@ -10,7 +10,7 @@ on:
 
 env:
   COMPOSE_FILE: docker-compose.yml
-  REPO_URL: https://github.com/emge1/allegro-clone-api.git
+  REPO_URL: emge1/allegro-clone-api
   REPO_BRANCH: main
 
 jobs:
