@@ -3,6 +3,7 @@ from django.urls import path, include
 from django.conf import settings
 from rest_framework.documentation import include_docs_urls
 from v1.prometheus.views import metrics_view
+from django.conf.urls.static import static
 
 
 urlpatterns = [
@@ -39,3 +40,5 @@ if settings.DEBUG:
     urlpatterns += [
         path('__debug__/', include(debug_toolbar.urls)),
     ]
+
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
