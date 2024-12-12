@@ -98,7 +98,7 @@ Access the application at http://127.0.0.1:8000/.
 # Entity Relationship Diagram 
 Below is the Entity Relationship Diagram (ERD) illustrating the relationships between the key entities in the project. Click on the image to view it in a larger size.
 
-![Entity Relationship Diagram](media/entity_diagram.png)
+![Entity Relationship Diagram](media/readme/entity_diagram.png)
 
 # API documentation
 
@@ -109,4 +109,4 @@ Below is a screenshot of the documentation as seen by a non-authenticated user.
 To view a screenshot displaying all possible HTTP methods and endpoints for authenticated users, click [here](media/localhost_8000_docs_.png).
 To view API documentation, run development server and visit http://127.0.0.1:8000/docs/
 
-![Swagger docs, non-authenticated](media/docs.png)
+![Swagger docs, non-authenticated](media/readme/docs.png)
