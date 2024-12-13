@@ -9,6 +9,7 @@ Key functionalities include:
 * Test coverage to ensure reliability.
 * GitHub Actions for automated CI workflows, including testing and building.
 * Support for both local development and production environments using Docker and docker-compose.
+* GitHub Actions with Trivy to ensure cybersecurity by scanning Docker images on each pull request and main branch push.
 
 
 While the backend is under active development, the [frontend](https://github.com/emge1/allegro-clone-frontend) is also in progress and will integrate with this API to simulate the full e-commerce platform experience.
