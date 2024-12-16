@@ -11,7 +11,6 @@ on:
 env:
   REPO_URL: emge1/allegro-clone-api
   REPO_BRANCH: main
-  ENVIRONMENT: ${{ secrets.ENVIRONMENT }}  # temporary solution
 
 jobs:
   ci:
@@ -48,7 +47,7 @@ jobs:
           path: test-reports/results.xml
 
   cd:
-    if: ${{ env.ENVIRONMENT == 'production' }}
+    if: ${{ secrets.ENVIRONMENT == "production" }}
     needs: ci
     runs-on: ubuntu-latest
     steps:
