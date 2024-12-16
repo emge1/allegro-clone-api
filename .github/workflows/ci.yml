@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: CI Pipeline
 
 on:
   push:
@@ -11,7 +11,6 @@ on:
 env:
   REPO_URL: emge1/allegro-clone-api
   REPO_BRANCH: main
-  ENVIRONMENT: ${{ secrets.ENVIRONMENT }}  # temporary solution
 
 jobs:
   ci:
@@ -47,54 +46,6 @@ jobs:
           name: test-reports
           path: test-reports/results.xml
 
-  cd:
-    if: ${{ env.ENVIRONMENT == 'production' }}
-    needs: ci
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-        with:
-        repository: ${{ env.REPO_URL }}
-        ref: ${{ env.REPO_BRANCH  }}
-
-      - name: Set up Terraform
-        run: echo "This step is in progress"
-
-      - name: Terraform init
-        run: echo "This step is in progress"
-
-      - name: Terraform Plan
-        run: echo "This step is in progress"
-
-      - name: Terraform Apply
-        run: echo "This step is in progress"
-
-      - name: Log in to AWS ECR
-        run: echo "This step is in progress"
-
-      - name: Build and Push Docker Image to ECR
-        run: echo "This step is in progress"
-
-      - name: Deploy to EC2
-        run: echo "This step is in progress"
-
-      - name: Verify Infrastructure State
-        run: echo "This step is in progress"
-
-      - name: Upload Deployment logs
-        run: echo "This step is in progress"
-
-      - name: Send Slack Notification
-        run: echo "This step is in progress"
-
-      - name: Failure Message
-        run: echo "This step is in progress"
-
-  postconditions:  # temporary solution
-    needs: [ci, cd]
-    runs-on: ubuntu-latest
-    steps:
       - name: Clean up Docker
         if: always()
         run: |
@@ -113,8 +64,8 @@ jobs:
 
       - name: Success Message
         if: success()
-        run: echo "Pipeline successfully completed"
+        run: echo "CI Pipeline successfully completed"
 
       - name: Failure Message
         if: failure()
-        run: echo "Pipeline unsuccessful"
+        run: echo "CI Pipeline unsuccessful"

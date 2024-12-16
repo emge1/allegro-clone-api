@@ -1,0 +1,81 @@
+name: CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+env:
+  REPO_URL: emge1/allegro-clone-api
+  REPO_BRANCH: main
+
+jobs:
+  cd:
+    if: false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ env.REPO_URL }}
+          ref: ${{ env.REPO_BRANCH  }}
+
+      - name: Set up Terraform
+        run: echo "This step is in progress"
+
+      - name: Terraform init
+        run: echo "This step is in progress"
+
+      - name: Terraform Plan
+        run: echo "This step is in progress"
+
+      - name: Terraform Apply
+        run: echo "This step is in progress"
+
+      - name: Log in to AWS ECR
+        run: echo "This step is in progress"
+
+      - name: Build and Push Docker Image to ECR
+        run: echo "This step is in progress"
+
+      - name: Deploy to EC2
+        run: echo "This step is in progress"
+
+      - name: Verify Infrastructure State
+        run: echo "This step is in progress"
+
+      - name: Upload Deployment logs
+        run: echo "This step is in progress"
+
+      - name: Send Slack Notification
+        run: echo "This step is in progress"
+
+      - name: Failure Message
+        run: echo "This step is in progress"
+
+      - name: Clean up Docker
+        if: always()
+        run: |
+          docker stop $(docker ps -q) || true
+          docker rm $(docker ps -aq) || true
+          docker network prune -f
+
+      - name: Clean Workspace
+        if: always()
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/workspace \
+            -w /workspace \
+            ci-cd-image \
+            sh -c "rm -rf /workspace/*"
+
+      - name: Success Message
+        if: success()
+        run: echo "CD Pipeline  successfully completed"
+
+      - name: Failure Message
+        if: failure()
+        run: echo "CD Pipeline  unsuccessful"
