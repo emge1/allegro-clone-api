@@ -51,11 +51,6 @@ jobs:
     needs: ci
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-        with:
-        repository: ${{ env.REPO_URL }}
-        ref: ${{ env.REPO_BRANCH  }}
 
       - name: Set up Terraform
         run: echo "This step is in progress"
