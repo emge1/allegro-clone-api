@@ -86,7 +86,7 @@ jobs:
         run: echo "This step is in progress"
 
   postconditions:  # temporary solution
-    needs: [ci, cd]
+    needs: ci
     runs-on: ubuntu-latest
     steps:
       - name: Clean up Docker
