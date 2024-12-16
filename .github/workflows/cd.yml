@@ -14,8 +14,7 @@ env:
 
 jobs:
   cd:
-    if: ${{ env.ENVIRONMENT == 'production' }}
-    needs: ci
+    if: false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -75,8 +74,8 @@ jobs:
 
       - name: Success Message
         if: success()
-        run: echo "Pipeline successfully completed"
+        run: echo "CD Pipeline  successfully completed"
 
       - name: Failure Message
         if: failure()
-        run: echo "Pipeline unsuccessful"
+        run: echo "CD Pipeline  unsuccessful"

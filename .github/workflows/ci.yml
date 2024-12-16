@@ -64,8 +64,8 @@ jobs:
 
       - name: Success Message
         if: success()
-        run: echo "Pipeline successfully completed"
+        run: echo "CI Pipeline successfully completed"
 
       - name: Failure Message
         if: failure()
-        run: echo "Pipeline unsuccessful"
+        run: echo "CI Pipeline unsuccessful"
