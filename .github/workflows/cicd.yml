@@ -47,7 +47,7 @@ jobs:
           path: test-reports/results.xml
 
   cd:
-    if: ${{ secrets.ENVIRONMENT == "production" }}
+    if: false  # temporary solution for dev
     needs: ci
     runs-on: ubuntu-latest
     steps:
