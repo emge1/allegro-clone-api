@@ -8,6 +8,7 @@ from v1.carts.models.cart_item import CartItem
 from v1.carts.serializers.cart import CartSerializer
 from v1.user_roles.models.customer import Customer
 from v1.products.models.product import Product
+from decimal import Decimal, InvalidOperation
 
 
 class CartView(APIView):
@@ -30,6 +31,7 @@ class CartView(APIView):
         """
         Post an Item to Cart:
         """
+        print(request.data)
         customer = Customer.objects.get(user=request.user)
         try:
             cart = Cart.objects.get(user=customer)
@@ -38,6 +40,14 @@ class CartView(APIView):
 
         product_id = request.data.get('product_id')
         quantity = request.data.get('quantity', 1)
+        price = request.data.get('price')
+
+        if not price:
+            return Response({"detail": "Price is required"}, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            price = Decimal(price)
+        except InvalidOperation:
+            return Response({"detail": "Invalid price format"}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
             product = Product.objects.get(id=product_id)
@@ -47,11 +57,12 @@ class CartView(APIView):
         cart_item, created = CartItem.objects.get_or_create(
             cart=cart,
             product=product,
-            defaults={'quantity': quantity}
+            defaults={'quantity': quantity, "price": price},
         )
 
         if not created:
             cart_item.quantity += quantity
+            cart_item.price = price
             cart_item.save()
 
         return Response({"detail": "Product added to the cart"}, status=status.HTTP_201_CREATED)
