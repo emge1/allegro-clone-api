@@ -5,14 +5,23 @@ ENV DJANGO_SETTINGS_MODULE=config.settings.local
 
 WORKDIR /app
 
-COPY requirements/local.txt /app/requirements/local.txt
-COPY requirements/base.txt /app/requirements/base.txt
-COPY requirements/production.txt /app/requirements/production.txt
-ARG REQUIREMENTS
+COPY README.md /app/README.md
+COPY Dockerfile /app/Dockerfile
+COPY entrypoint.sh /app/entrypoint.sh
+COPY media /app/media
+COPY requirements /app/requirements
+COPY v1 /app/v1
+COPY config /app/config
+COPY docker-compose.yml /app/docker-compose.yml
+COPY load_sample_data.sh /app/load_sample_data.sh
+COPY manage.py /app/manage.py
+COPY sample_data /app/sample_data
+
+ARG REQUIREMENTS=requirements/local.txt
 RUN pip install --no-cache-dir -r /app/${REQUIREMENTS}
 
-COPY . /app
+RUN chmod +x /app/load_sample_data.sh /app/entrypoint.sh
 
 EXPOSE 8000
 
-CMD python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000
+ENTRYPOINT ["/app/entrypoint.sh"]
