@@ -1,0 +1,14 @@
+venv
+*.pyc
+__pycache__
+.env
+*.log
+*.tmp
+db.sqlite3
+*.swp
+*.swo
+*~
+/tests/
+*.coverage
+**/migrations/*
+/static/
