@@ -28,10 +28,7 @@ urlpatterns = [
 
     # Core
     path('admin/', admin.site.urls),
-    path('docs/', include_docs_urls(title='Allegro clone')),
 
-    # Prometheus
-    path('metrics/', metrics_view)
 ]
 
 if settings.DEBUG:
@@ -39,6 +36,11 @@ if settings.DEBUG:
 
     urlpatterns += [
         path('__debug__/', include(debug_toolbar.urls)),
+        path('docs/', include_docs_urls(title='Allegro clone')),
     ]
 
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+else:
+    urlpatterns += [
+        path('metrics/', metrics_view),
+    ]

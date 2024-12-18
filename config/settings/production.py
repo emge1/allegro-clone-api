@@ -1,5 +1,6 @@
 import os
 from .base import *
+import logging
 
 
 DEBUG = False
@@ -28,6 +29,24 @@ EMAIL_USE_TLS = config('EMAIL_USE_TLS') == 'True'
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
+class MaskSensitiveData(logging.Filter):
+    def __init__(self, sensitive_keys):
+        super().__init__()
+        self.sensitive_keys = sensitive_keys
+
+    def filter(self, record):
+        for key in self.sensitive_keys:
+            value = os.getenv(key)
+            if value and value in record.msg:
+                record.msg = record.msg.replace(value, "***MASKED***")
+        return True
+
+SENSITIVE_KEYS = [
+    "SECRET_KEY", "EMAIL_ADMIN", "EMAIL_HOST", "EMAIL_PORT", "EMAIL_USE_TLS",
+    "EMAIL_HOST_USER", "EMAIL_HOST_PASSWORD", "POSTGRES_USER", "POSTGRES_PASSWORD",
+    "POSTGRES_DB", "GF_SECURITY_ADMIN_PASSWORD", "ENVIRONMENT"
+]
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -45,11 +64,16 @@ LOGGING = {
         "require_debug_false": {
             '()': 'django.utils.log.RequireDebugFalse',
         },
+        "mask_sensitive_data": {
+            '()': MaskSensitiveData,
+            'sensitive_keys': SENSITIVE_KEYS,
+        },
     },
     'handlers': {
         'console': {
             'level': 'INFO',
             'class': 'logging.StreamHandler',
+            'filters': ['mask_sensitive_data'],
             'formatter': 'simple',
         },
         'file': {
