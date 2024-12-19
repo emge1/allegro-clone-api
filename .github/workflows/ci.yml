@@ -61,6 +61,7 @@ jobs:
             -e SECRET_KEY=${{ secrets.SECRET_KEY }} \
             -v ${{ github.workspace }}:/workspace \
             -w /workspace \
+            --entrypoint "" \
             ci-image \
             sh -c "rm -rf /workspace/*"
 
