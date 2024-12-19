@@ -12,9 +12,9 @@ INTERNAL_IPS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('POSTGRES_DB', search_path=BASE_DIR),
-        'USER': config('POSTGRES_USER', search_path=BASE_DIR),
-        'PASSWORD': config('POSTGRES_PASSWORD', search_path=BASE_DIR),
+        'NAME': config('POSTGRES_DB'),
+        'USER': config('POSTGRES_USER'),
+        'PASSWORD': config('POSTGRES_PASSWORD'),
         'PORT': '5432',
         'HOST': 'db_production',
     }
