@@ -70,7 +70,8 @@ jobs:
             -e SECRET_KEY=${{ secrets.SECRET_KEY }} \
             -v ${{ github.workspace }}:/workspace \
             -w /workspace \
-            ci-cd-image \
+            --entrypoint "" \
+            cd-image \
             sh -c "rm -rf /workspace/*"
 
       - name: Success Message
