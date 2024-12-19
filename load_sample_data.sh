@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-DB_FILE="config/db.sqlite3"
-SQL_SAMPLE_DATA_DIR="./sample_data"
+DB_FILE="app/config/db.sqlite3"
+SQL_SAMPLE_DATA_DIR="app/sample_data"
 
-# Sprawdzenie katalogu i pliku bazy danych
 if [ ! -d "$SQL_SAMPLE_DATA_DIR" ]; then
   echo "Error: $SQL_SAMPLE_DATA_DIR does not exist."
   exit 1
