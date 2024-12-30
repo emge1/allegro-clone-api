@@ -2,21 +2,13 @@ services:
   web:
     build:
       context: .
+      dockerfile: Dockerfile
       args:
         REQUIREMENTS: requirements/local.txt
     ports:
       - "8000:8000"
     environment:
       DJANGO_SETTINGS_MODULE: config.settings.local
-    volumes:
-      - ./media:/app/media
-      - ./logs:/app/logs
-      - ./config:/app/config
-      - ./requirements:/app/requirements
-      - ./sample_data:/app/sample_data
-      - ./manage.py:/app/manage.py
-      - ./entrypoint.sh:/app/entrypoint.sh
-      - ./v1:/app/v1
     env_file:
       - .env
 
