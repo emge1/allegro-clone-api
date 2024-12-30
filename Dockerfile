@@ -23,7 +23,7 @@ RUN pip install --no-cache-dir -r /app/${REQUIREMENTS}
 RUN apt-get update && apt-get install -y sqlite3
 
 RUN chmod +x /app/load_sample_data.sh /app/entrypoint.sh
-RUN sed -i 's/\r$//' app/load_sample_data.sh && RUN sed -i 's/\r$//' app/entrypoint.sh
+RUN sed -i 's/\r$//' /app/load_sample_data.sh &&  sed -i 's/\r$//' /app/entrypoint.sh
 
 EXPOSE 8000
 
