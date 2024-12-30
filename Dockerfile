@@ -20,6 +20,8 @@ COPY sample_data /app/sample_data
 ARG REQUIREMENTS=requirements/local.txt
 RUN pip install --no-cache-dir -r /app/${REQUIREMENTS}
 
+RUN apt-get update && apt-get install -y sqlite3
+
 RUN chmod +x /app/load_sample_data.sh /app/entrypoint.sh
 
 EXPOSE 8000
