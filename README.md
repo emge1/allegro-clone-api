@@ -140,7 +140,11 @@ git clone https://github.com/emge1/allegro-clone-api.git
 git clone https://github.com/emge1/allegro-clone-frontend.git
 cd allegro-clone-api
 ```
+Create .env file and add the secret key:
 
+```bash
+echo "SECRET_KEY=secret_key" > .env
+```
 And run docker compose:
 ```bash
 docker compose up web frontend
