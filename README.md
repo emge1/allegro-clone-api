@@ -16,6 +16,7 @@ functionality and simulate real-world payment processes.
   * [Features](#features)
 * [Project setup](#project-setup)
   * [Using Virtual Environment](#using-virtual-environment)
+  * [Using Docker: Build and Run](#using-docker--build-and-run)
 * [Dependencies](#dependencies)
   * [Backend](#backend)
   * [Frontend](#frontend)
@@ -63,31 +64,30 @@ functionality and simulate real-world payment processes.
 ## Using Virtual Environment
 
 Clone the repository:
-```
+```bash
 git clone https://github.com/emge1/allegro-clone-api.git
 cd allegro-clone-api
 ```
-Create .env file with a secret key:
-```
-SECRET_KEY=secret_key
+Create .env file and add the secret key:
+```bash
+echo "SECRET_KEY=secret_key" > .env
 ```
 Set up a virtual environment:
 
-```
+```bash
 python -m venv venv
 venv\Scripts\activate.bat
 ```
 Install dependencies:
-```
+```bash
 pip install -r requirements/local.txt 
 ```
 Apply database migrations:
-```
+```bash
 python manage.py migrate
 ```
 Load sample data - run load_sample_data.sh:
-```
-# bash 
+``` bash
 ./load_sample_data.sh
 
 # optionally, if "/usr/bin/env: ‘bash\r’: No such file or directory":
@@ -97,13 +97,37 @@ sed -i 's/\r$//' ./load_sample_data.sh
 ./load_sample_data.sh
 ```
 Start the development server:
-```
+```bash
 python manage.py runserver
 ```
 
 Access the application at http://localhost:8000/.
 
-If you want to experience a fullstack application, please set up  [GUI](https://github.com/emge1/allegro-clone-frontend) too.
+To experience the fullstack application, please set up the [frontend](https://github.com/emge1/allegro-clone-frontend) as well.
+
+## Using Docker: Build and Run
+
+Clone the repository:
+```bash
+git clone https://github.com/emge1/allegro-clone-api.git
+cd allegro-clone-api
+```
+Create .env file and add the secret key:
+```bash
+echo "SECRET_KEY=secret_key" > .env
+```
+Build Docker image:
+```bash
+docker build -t myclone:latest .
+```
+And run Docker container:
+```bash
+docker run --env-file .env myclone:latest
+```
+Access the application at http://localhost:8000/.
+
+To experience the fullstack application, please set up the [frontend](https://github.com/emge1/allegro-clone-frontend) as well.
+
 
 # Dependencies
 ## Backend
