@@ -16,7 +16,7 @@ functionality and simulate real-world payment processes.
   * [Features](#features)
 * [Project setup](#project-setup)
   * [Using Virtual Environment](#using-virtual-environment)
-  * [Using Docker: Build and Run](#using-docker--build-and-run)
+  * [Using Docker: Build and Run](#using-docker-build-and-run)
 * [Dependencies](#dependencies)
   * [Backend](#backend)
   * [Frontend](#frontend)
@@ -105,7 +105,7 @@ Access the application at http://localhost:8000/.
 
 To experience the fullstack application, please set up the [frontend](https://github.com/emge1/allegro-clone-frontend) as well.
 
-## Using Docker: Build and Run
+## Using Docker Build and Run
 
 Clone the repository:
 ```bash
@@ -113,6 +113,7 @@ git clone https://github.com/emge1/allegro-clone-api.git
 cd allegro-clone-api
 ```
 Create .env file and add the secret key:
+
 ```bash
 echo "SECRET_KEY=secret_key" > .env
 ```
@@ -122,12 +123,11 @@ docker build -t myclone:latest .
 ```
 And run Docker container:
 ```bash
-docker run --env-file .env myclone:latest
+docker run --env-file .env -p 8000:8000  myclone:latest
 ```
 Access the application at http://localhost:8000/.
 
 To experience the fullstack application, please set up the [frontend](https://github.com/emge1/allegro-clone-frontend) as well.
-
 
 # Dependencies
 ## Backend
