@@ -17,6 +17,7 @@ functionality and simulate real-world payment processes.
 * [Project setup](#project-setup)
   * [Using Virtual Environment](#using-virtual-environment)
   * [Using Docker: Build and Run](#using-docker-build-and-run)
+  * [Using Docker Compose](#using-docker-compose)
 * [Dependencies](#dependencies)
   * [Backend](#backend)
   * [Frontend](#frontend)
@@ -128,6 +129,23 @@ docker run --env-file .env -p 8000:8000  myclone:latest
 Access the application at http://localhost:8000/.
 
 To experience the fullstack application, please set up the [frontend](https://github.com/emge1/allegro-clone-frontend) as well.
+
+
+## Using Docker Compose
+
+Clone both backend and the frontend repository:
+
+```bash
+git clone https://github.com/emge1/allegro-clone-api.git
+git clone https://github.com/emge1/allegro-clone-frontend.git
+cd allegro-clone-api
+```
+
+And run docker compose:
+```bash
+docker compose up web frontend
+```
+Access the application at http://localhost:3000/.
 
 # Dependencies
 ## Backend
