@@ -1,0 +1,322 @@
+[
+    {
+        "model": "product_variants.productvariant",
+        "pk": 1,
+        "fields": {
+            "title": "iPhone 15 - 128GB",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 2,
+        "fields": {
+            "title": "iPhone 15 - 256GB",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 3,
+        "fields": {
+            "title": "MacBook Air - 13-inch",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 4,
+        "fields": {
+            "title": "MacBook Air - 15-inch",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 5,
+        "fields": {
+            "title": "Canon EOS R10 - Body Only",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 6,
+        "fields": {
+            "title": "Canon EOS R10 - With Lens Kit",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 7,
+        "fields": {
+            "title": "Mens Leather Jacket - Black",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 8,
+        "fields": {
+            "title": "Mens Leather Jacket - Brown",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 9,
+        "fields": {
+            "title": "Women's Evening Dress - Red",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 10,
+        "fields": {
+            "title": "Women's Evening Dress - Blue",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 11,
+        "fields": {
+            "title": "Gold Earrings - 18k",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 12,
+        "fields": {
+            "title": "Gold Earrings - 24k",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 13,
+        "fields": {
+            "title": "Modern Sofa - 3-Seater",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 14,
+        "fields": {
+            "title": "Modern Sofa - L-Shape",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 15,
+        "fields": {
+            "title": "Gardening Shovel - Small",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 16,
+        "fields": {
+            "title": "Gardening Shovel - Large",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 17,
+        "fields": {
+            "title": "Wall Painting - Abstract",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 18,
+        "fields": {
+            "title": "Wall Painting - Landscape",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 19,
+        "fields": {
+            "title": "Treadmill Pro - Standard",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 20,
+        "fields": {
+            "title": "Treadmill Pro - Advanced",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 21,
+        "fields": {
+            "title": "Camping Tent - 2 Person",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 22,
+        "fields": {
+            "title": "Camping Tent - 4 Person",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 23,
+        "fields": {
+            "title": "Football Kit - Home",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 24,
+        "fields": {
+            "title": "Football Kit - Away",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 25,
+        "fields": {
+            "title": "Moisturizing Cream - 50ml",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 26,
+        "fields": {
+            "title": "Moisturizing Cream - 100ml",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 27,
+        "fields": {
+            "title": "Lipstick Set - Matte",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 28,
+        "fields": {
+            "title": "Lipstick Set - Glossy",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 29,
+        "fields": {
+            "title": "Vitamin C Tablets - 30-pack",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 30,
+        "fields": {
+            "title": "Vitamin C Tablets - 60-pack",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 31,
+        "fields": {
+            "title": "Superhero Figure - Classic",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 32,
+        "fields": {
+            "title": "Superhero Figure - Limited Edition",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 33,
+        "fields": {
+            "title": "Math Learning Toy - Basic",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 34,
+        "fields": {
+            "title": "Math Learning Toy - Advanced",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 35,
+        "fields": {
+            "title": "Chess Board - Wooden",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 36,
+        "fields": {
+            "title": "Chess Board - Magnetic",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 37,
+        "fields": {
+            "title": "Car Phone Holder - Dashboard",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 38,
+        "fields": {
+            "title": "Car Phone Holder - Windshield",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 39,
+        "fields": {
+            "title": "Motorbike Helmet - Full Face",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    },
+    {
+        "model": "product_variants.productvariant",
+        "pk": 40,
+        "fields": {
+            "title": "Motorbike Helmet - Open Face",
+            "created_at": "2025-01-01T22:57:43.425035"
+        }
+    }
+]

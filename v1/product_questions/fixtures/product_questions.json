@@ -1,0 +1,482 @@
+[
+    {
+        "model": "product_questions.productquestion",
+        "pk": 1,
+        "fields": {
+            "product_id": 1,
+            "user_id": 4,
+            "question": "Does the iPhone 15 support 5G?",
+            "answer": "Yes, it supports 5G connectivity.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 2,
+        "fields": {
+            "product_id": 1,
+            "user_id": 4,
+            "question": "What is the battery life of the iPhone 15?",
+            "answer": "It lasts up to 18 hours with typical use.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 3,
+        "fields": {
+            "product_id": 2,
+            "user_id": 4,
+            "question": "Does the MacBook Air come with a warranty?",
+            "answer": "Yes, it includes a one-year limited warranty.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 4,
+        "fields": {
+            "product_id": 2,
+            "user_id": 4,
+            "question": "Is the MacBook Air suitable for gaming?",
+            "answer": "It can handle light gaming, but it is not designed for heavy gaming.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 5,
+        "fields": {
+            "product_id": 3,
+            "user_id": 4,
+            "question": "What lenses are compatible with the Canon EOS R10?",
+            "answer": "The Canon EOS R10 is compatible with RF lenses.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 6,
+        "fields": {
+            "product_id": 3,
+            "user_id": 4,
+            "question": "Does the camera include an SD card?",
+            "answer": "No, the SD card is sold separately.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 7,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "question": "What is the material of the leather jacket?",
+            "answer": "It is made of 100% genuine leather.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 8,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "question": "Can the jacket be cleaned in a washing machine?",
+            "answer": "No, it should be dry-cleaned only.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 9,
+        "fields": {
+            "product_id": 5,
+            "user_id": 4,
+            "question": "Is the evening dress true to size?",
+            "answer": "Yes, but we recommend checking the size chart before purchasing.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 10,
+        "fields": {
+            "product_id": 5,
+            "user_id": 4,
+            "question": "Can the dress be machine washed?",
+            "answer": "Yes, it is machine washable.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 11,
+        "fields": {
+            "product_id": 6,
+            "user_id": 4,
+            "question": "What is the weight of the gold earrings?",
+            "answer": "The earrings weigh approximately 5 grams each.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 12,
+        "fields": {
+            "product_id": 6,
+            "user_id": 4,
+            "question": "Are the earrings hypoallergenic?",
+            "answer": "Yes, they are designed to be hypoallergenic.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 13,
+        "fields": {
+            "product_id": 7,
+            "user_id": 4,
+            "question": "Does the sofa come assembled?",
+            "answer": "No, it requires basic assembly.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 14,
+        "fields": {
+            "product_id": 7,
+            "user_id": 4,
+            "question": "Is the fabric of the sofa stain-resistant?",
+            "answer": "Yes, it is designed to resist common stains.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 15,
+        "fields": {
+            "product_id": 8,
+            "user_id": 4,
+            "question": "What is the length of the gardening shovel?",
+            "answer": "It is 40 inches long.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 16,
+        "fields": {
+            "product_id": 8,
+            "user_id": 4,
+            "question": "Is the shovel handle ergonomic?",
+            "answer": "Yes, it features an ergonomic handle for comfortable use.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 17,
+        "fields": {
+            "product_id": 9,
+            "user_id": 4,
+            "question": "What are the dimensions of the wall painting?",
+            "answer": "The painting measures 24x36 inches.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 18,
+        "fields": {
+            "product_id": 9,
+            "user_id": 4,
+            "question": "Is the painting framed?",
+            "answer": "No, it is sold without a frame.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 19,
+        "fields": {
+            "product_id": 10,
+            "user_id": 4,
+            "question": "What is the maximum weight capacity of the treadmill?",
+            "answer": "The treadmill supports up to 300 lbs.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 20,
+        "fields": {
+            "product_id": 10,
+            "user_id": 4,
+            "question": "Does the treadmill have a heart rate monitor?",
+            "answer": "Yes, it includes a built-in heart rate monitor.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 21,
+        "fields": {
+            "product_id": 11,
+            "user_id": 4,
+            "question": "Is the camping tent waterproof?",
+            "answer": "Yes, it is fully waterproof.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 22,
+        "fields": {
+            "product_id": 11,
+            "user_id": 4,
+            "question": "How many people can the tent accommodate?",
+            "answer": "It can accommodate up to 4 people.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 23,
+        "fields": {
+            "product_id": 12,
+            "user_id": 4,
+            "question": "What material is the football kit made of?",
+            "answer": "It is made of high-quality polyester.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 24,
+        "fields": {
+            "product_id": 12,
+            "user_id": 4,
+            "question": "Does the kit include socks?",
+            "answer": "Yes, the kit includes matching socks.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 25,
+        "fields": {
+            "product_id": 13,
+            "user_id": 4,
+            "question": "Is the moisturizing cream suitable for sensitive skin?",
+            "answer": "Yes, it is dermatologically tested for sensitive skin.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 26,
+        "fields": {
+            "product_id": 13,
+            "user_id": 4,
+            "question": "Does the cream contain any fragrance?",
+            "answer": "No, it is fragrance-free.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 27,
+        "fields": {
+            "product_id": 14,
+            "user_id": 4,
+            "question": "Are the lipsticks long-lasting?",
+            "answer": "Yes, they are designed to last up to 8 hours.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 28,
+        "fields": {
+            "product_id": 14,
+            "user_id": 4,
+            "question": "Are the lipsticks vegan?",
+            "answer": "Yes, they are vegan and cruelty-free.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 29,
+        "fields": {
+            "product_id": 15,
+            "user_id": 4,
+            "question": "Are the Vitamin C tablets chewable?",
+            "answer": "Yes, they are easy to chew and swallow.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 30,
+        "fields": {
+            "product_id": 15,
+            "user_id": 4,
+            "question": "What is the recommended dosage for the tablets?",
+            "answer": "The recommended dosage is one tablet per day.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 31,
+        "fields": {
+            "product_id": 16,
+            "user_id": 4,
+            "question": "What is the height of the superhero figure?",
+            "answer": "It is 12 inches tall.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 32,
+        "fields": {
+            "product_id": 16,
+            "user_id": 4,
+            "question": "Is the figure poseable?",
+            "answer": "Yes, it has multiple points of articulation.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 33,
+        "fields": {
+            "product_id": 17,
+            "user_id": 4,
+            "question": "What age group is the math toy suitable for?",
+            "answer": "It is designed for children aged 6-10.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 34,
+        "fields": {
+            "product_id": 17,
+            "user_id": 4,
+            "question": "Does the toy require batteries?",
+            "answer": "No, it does not require batteries.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 35,
+        "fields": {
+            "product_id": 18,
+            "user_id": 4,
+            "question": "Is the chess board magnetic?",
+            "answer": "Yes, it has magnetic pieces.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 36,
+        "fields": {
+            "product_id": 18,
+            "user_id": 4,
+            "question": "What are the dimensions of the chess board?",
+            "answer": "It measures 15x15 inches.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 37,
+        "fields": {
+            "product_id": 19,
+            "user_id": 4,
+            "question": "Can the phone holder rotate?",
+            "answer": "Yes, it can rotate 360 degrees.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 38,
+        "fields": {
+            "product_id": 19,
+            "user_id": 4,
+            "question": "Is the phone holder compatible with all phones?",
+            "answer": "Yes, it is adjustable to fit most phone sizes.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 39,
+        "fields": {
+            "product_id": 20,
+            "user_id": 4,
+            "question": "What sizes are available for the helmet?",
+            "answer": "It is available in small, medium, and large.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_questions.productquestion",
+        "pk": 40,
+        "fields": {
+            "product_id": 20,
+            "user_id": 4,
+            "question": "Is the helmet DOT certified?",
+            "answer": "Yes, it meets DOT safety standards.",
+            "created_at": "2025-01-01T22:57:43.425035",
+            "is_active": true
+        }
+    }
+]

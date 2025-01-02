@@ -1,0 +1,392 @@
+[
+    {
+        "model": "subcategories.subcategory",
+        "pk": 1,
+        "fields": {
+            "title": "Smartphones",
+            "url_slug": "smartphones",
+            "thumbnail": "https://example.com/thumbnail/smartphones.jpg",
+            "description": "Latest smartphones from top brands.",
+            "created_at": "2024-03-12T22:02:57.302233",
+            "is_active": true,
+            "category": 1
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 2,
+        "fields": {
+            "title": "Laptops",
+            "url_slug": "laptops",
+            "thumbnail": "https://example.com/thumbnail/laptops.jpg",
+            "description": "Laptops for work and play.",
+            "created_at": "2023-11-22T22:02:57.302262",
+            "is_active": true,
+            "category": 1
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 3,
+        "fields": {
+            "title": "Cameras",
+            "url_slug": "cameras",
+            "thumbnail": "https://example.com/thumbnail/cameras.jpg",
+            "description": "High-quality cameras.",
+            "created_at": "2024-05-18T22:02:57.302269",
+            "is_active": true,
+            "category": 1
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 4,
+        "fields": {
+            "title": "Men's Clothing",
+            "url_slug": "men's-clothing",
+            "thumbnail": "https://example.com/thumbnail/men's_clothing.jpg",
+            "description": "Stylish men's clothing.",
+            "created_at": "2024-10-10T22:02:57.302275",
+            "is_active": true,
+            "category": 2
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 5,
+        "fields": {
+            "title": "Women's Clothing",
+            "url_slug": "women's-clothing",
+            "thumbnail": "https://example.com/thumbnail/women's_clothing.jpg",
+            "description": "Trendy women's fashion.",
+            "created_at": "2024-07-02T22:02:57.302280",
+            "is_active": true,
+            "category": 2
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 6,
+        "fields": {
+            "title": "Accessories",
+            "url_slug": "accessories",
+            "thumbnail": "https://example.com/thumbnail/accessories.jpg",
+            "description": "Fashion accessories.",
+            "created_at": "2024-07-31T22:02:57.302284",
+            "is_active": true,
+            "category": 2
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 7,
+        "fields": {
+            "title": "Furniture",
+            "url_slug": "furniture",
+            "thumbnail": "https://example.com/thumbnail/furniture.jpg",
+            "description": "Comfortable furniture.",
+            "created_at": "2024-05-12T22:02:57.302291",
+            "is_active": true,
+            "category": 3
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 8,
+        "fields": {
+            "title": "Garden Tools",
+            "url_slug": "garden-tools",
+            "thumbnail": "https://example.com/thumbnail/garden_tools.jpg",
+            "description": "Essential garden tools.",
+            "created_at": "2024-04-06T22:02:57.302297",
+            "is_active": true,
+            "category": 3
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 9,
+        "fields": {
+            "title": "Home Decor",
+            "url_slug": "home-decor",
+            "thumbnail": "https://example.com/thumbnail/home_decor.jpg",
+            "description": "Beautiful home decor.",
+            "created_at": "2024-05-22T22:02:57.302301",
+            "is_active": true,
+            "category": 3
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 10,
+        "fields": {
+            "title": "Fitness Equipment",
+            "url_slug": "fitness-equipment",
+            "thumbnail": "https://example.com/thumbnail/fitness_equipment.jpg",
+            "description": "Gear for your fitness journey.",
+            "created_at": "2024-09-17T22:02:57.302306",
+            "is_active": true,
+            "category": 4
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 11,
+        "fields": {
+            "title": "Outdoor Gear",
+            "url_slug": "outdoor-gear",
+            "thumbnail": "https://example.com/thumbnail/outdoor_gear.jpg",
+            "description": "Outdoor essentials.",
+            "created_at": "2024-03-21T22:02:57.302311",
+            "is_active": true,
+            "category": 4
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 12,
+        "fields": {
+            "title": "Team Sports",
+            "url_slug": "team-sports",
+            "thumbnail": "https://example.com/thumbnail/team_sports.jpg",
+            "description": "Sports equipment for teams.",
+            "created_at": "2024-04-30T22:02:57.302332",
+            "is_active": true,
+            "category": 4
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 13,
+        "fields": {
+            "title": "Skincare",
+            "url_slug": "skincare",
+            "thumbnail": "https://example.com/thumbnail/skincare.jpg",
+            "description": "Products for skincare.",
+            "created_at": "2024-11-04T22:02:57.302344",
+            "is_active": true,
+            "category": 5
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 14,
+        "fields": {
+            "title": "Makeup",
+            "url_slug": "makeup",
+            "thumbnail": "https://example.com/thumbnail/makeup.jpg",
+            "description": "Makeup essentials.",
+            "created_at": "2023-12-05T22:02:57.302351",
+            "is_active": true,
+            "category": 5
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 15,
+        "fields": {
+            "title": "Health Supplements",
+            "url_slug": "health-supplements",
+            "thumbnail": "https://example.com/thumbnail/health_supplements.jpg",
+            "description": "Health supplements.",
+            "created_at": "2024-04-18T22:02:57.302357",
+            "is_active": true,
+            "category": 5
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 16,
+        "fields": {
+            "title": "Action Figures",
+            "url_slug": "action-figures",
+            "thumbnail": "https://example.com/thumbnail/action_figures.jpg",
+            "description": "Popular action figures.",
+            "created_at": "2024-08-15T22:02:57.302362",
+            "is_active": true,
+            "category": 6
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 17,
+        "fields": {
+            "title": "Educational Toys",
+            "url_slug": "educational-toys",
+            "thumbnail": "https://example.com/thumbnail/educational_toys.jpg",
+            "description": "Educational toys for learning.",
+            "created_at": "2024-03-28T22:02:57.302366",
+            "is_active": true,
+            "category": 6
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 18,
+        "fields": {
+            "title": "Board Games",
+            "url_slug": "board-games",
+            "thumbnail": "https://example.com/thumbnail/board_games.jpg",
+            "description": "Fun board games.",
+            "created_at": "2024-01-01T22:02:57.302370",
+            "is_active": true,
+            "category": 6
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 19,
+        "fields": {
+            "title": "Car Accessories",
+            "url_slug": "car-accessories",
+            "thumbnail": "https://example.com/thumbnail/car_accessories.jpg",
+            "description": "Accessories for your car.",
+            "created_at": "2024-04-09T22:02:57.302375",
+            "is_active": true,
+            "category": 7
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 20,
+        "fields": {
+            "title": "Motorbike Gear",
+            "url_slug": "motorbike-gear",
+            "thumbnail": "https://example.com/thumbnail/motorbike_gear.jpg",
+            "description": "Gear for motorbike enthusiasts.",
+            "created_at": "2024-07-19T22:02:57.302379",
+            "is_active": true,
+            "category": 7
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 21,
+        "fields": {
+            "title": "Car Parts",
+            "url_slug": "car-parts",
+            "thumbnail": "https://example.com/thumbnail/car_parts.jpg",
+            "description": "Replacement car parts.",
+            "created_at": "2024-06-11T22:02:57.302383",
+            "is_active": true,
+            "category": 7
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 22,
+        "fields": {
+            "title": "Fiction",
+            "url_slug": "fiction",
+            "thumbnail": "https://example.com/thumbnail/fiction.jpg",
+            "description": "Top fiction books.",
+            "created_at": "2024-03-11T22:02:57.302388",
+            "is_active": true,
+            "category": 8
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 23,
+        "fields": {
+            "title": "Non-Fiction",
+            "url_slug": "non-fiction",
+            "thumbnail": "https://example.com/thumbnail/non-fiction.jpg",
+            "description": "Informative non-fiction.",
+            "created_at": "2024-08-31T22:02:57.302395",
+            "is_active": true,
+            "category": 8
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 24,
+        "fields": {
+            "title": "Children's Books",
+            "url_slug": "children's-books",
+            "thumbnail": "https://example.com/thumbnail/children's_books.jpg",
+            "description": "Books for children.",
+            "created_at": "2024-06-10T22:02:57.302402",
+            "is_active": true,
+            "category": 8
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 25,
+        "fields": {
+            "title": "Vinyl Records",
+            "url_slug": "vinyl-records",
+            "thumbnail": "https://example.com/thumbnail/vinyl_records.jpg",
+            "description": "Classic vinyl records.",
+            "created_at": "2024-04-20T22:02:57.302409",
+            "is_active": true,
+            "category": 9
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 26,
+        "fields": {
+            "title": "CDs",
+            "url_slug": "cds",
+            "thumbnail": "https://example.com/thumbnail/cds.jpg",
+            "description": "Music CDs from all genres.",
+            "created_at": "2024-01-24T22:02:57.302416",
+            "is_active": true,
+            "category": 9
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 27,
+        "fields": {
+            "title": "Instruments",
+            "url_slug": "instruments",
+            "thumbnail": "https://example.com/thumbnail/instruments.jpg",
+            "description": "Instruments for musicians.",
+            "created_at": "2024-08-25T22:02:57.302421",
+            "is_active": true,
+            "category": 9
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 28,
+        "fields": {
+            "title": "Stationery",
+            "url_slug": "stationery",
+            "thumbnail": "https://example.com/thumbnail/stationery.jpg",
+            "description": "Basic stationery supplies.",
+            "created_at": "2024-09-30T22:02:57.302435",
+            "is_active": true,
+            "category": 10
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 29,
+        "fields": {
+            "title": "Printers",
+            "url_slug": "printers",
+            "thumbnail": "https://example.com/thumbnail/printers.jpg",
+            "description": "High-quality printers.",
+            "created_at": "2024-09-06T22:02:57.302439",
+            "is_active": true,
+            "category": 10
+        }
+    },
+    {
+        "model": "subcategories.subcategory",
+        "pk": 30,
+        "fields": {
+            "title": "Office Furniture",
+            "url_slug": "office-furniture",
+            "thumbnail": "https://example.com/thumbnail/office_furniture.jpg",
+            "description": "Ergonomic office furniture.",
+            "created_at": "2024-01-03T22:02:57.302443",
+            "is_active": true,
+            "category": 10
+        }
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "model": "user_roles.customer",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "created_date": "2022-03-08T19:00:56.271280",
+            "modified_date": "2022-03-08T19:00:56.271280"
+        }
+    }
+]
