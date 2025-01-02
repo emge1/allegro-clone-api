@@ -3,6 +3,9 @@ django==5.1.2
 python-decouple==3.8
 django-cors-headers==4.6.0
 pillow==11.0.0
-prometheus-client==0.21.1
 coreapi==2.3.3
+pytest==8.3.3
+pytest-django==4.9.0
+pytest-cov==6.0.0
+junit-xml==1.9
 
