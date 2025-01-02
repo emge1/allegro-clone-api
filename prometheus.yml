@@ -10,13 +10,9 @@ scrape_configs:
     static_configs:
        - targets: ['grafana:3100']
 
-  - job_name: 'web'
+  - job_name: 'web_prod'
     static_configs:
       - targets: ['localhost:8000']
-
-  #- job_name: 'web_prod'
-  #  static_configs:
-  #    - targets: ['localhost:8000']
 
   - job_name: 'db_prod'
     static_configs:
