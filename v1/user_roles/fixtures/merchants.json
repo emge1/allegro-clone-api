@@ -1,0 +1,14 @@
+[
+    {
+        "model": "user_roles.merchant",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "company_name": "Merchant Company",
+            "get_details": "Details about the merchant",
+            "address": "789 Merchant Road, Merchant City",
+            "created_date": "2022-03-08T19:00:56.271280",
+            "modified_date": "2022-03-08T19:00:56.271280"
+        }
+    }
+]

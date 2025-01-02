@@ -1,10 +1,12 @@
-# ENVIRONMENT = 'local'
-ENVIRONMENT = 'development'
-# ENVIRONMENT = 'production'
+from decouple import config
+
+ENVIRONMENT = config("ENVIRONMENT")
 
 if ENVIRONMENT == 'local':
     SETTINGS_MODULE = 'config.settings.local'
-if ENVIRONMENT == 'development':
+elif ENVIRONMENT == 'development':
     SETTINGS_MODULE = 'config.settings.development'
-if ENVIRONMENT == 'production':
+elif ENVIRONMENT == 'production':
     SETTINGS_MODULE = 'config.settings.production'
+else:
+    raise ValueError(f"Unknown ENVIRONMENT: {ENVIRONMENT}")

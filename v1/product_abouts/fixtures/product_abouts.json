@@ -1,0 +1,542 @@
+[
+    {
+        "model": "product_abouts.productabout",
+        "pk": 1,
+        "fields": {
+            "product_id": 1,
+            "title": "Next-generation smartphone with advanced features.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 2,
+        "fields": {
+            "product_id": 1,
+            "title": "Supports 5G connectivity for blazing-fast internet.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 3,
+        "fields": {
+            "product_id": 1,
+            "title": "Made with durable materials and a sleek design.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 4,
+        "fields": {
+            "product_id": 2,
+            "title": "Lightweight laptop ideal for professionals on the go.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 5,
+        "fields": {
+            "product_id": 2,
+            "title": "Powered by the M2 chip for exceptional performance.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 6,
+        "fields": {
+            "product_id": 2,
+            "title": "Up to 18 hours of battery life for all-day use.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 7,
+        "fields": {
+            "product_id": 3,
+            "title": "Compact and versatile mirrorless camera.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 8,
+        "fields": {
+            "product_id": 3,
+            "title": "24.2 MP resolution for high-quality photos.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 9,
+        "fields": {
+            "product_id": 3,
+            "title": "Compatible with a wide range of Canon RF lenses.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 10,
+        "fields": {
+            "product_id": 4,
+            "title": "Stylish and durable leather jacket for men.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 11,
+        "fields": {
+            "product_id": 4,
+            "title": "Available in multiple colors and sizes.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 12,
+        "fields": {
+            "product_id": 4,
+            "title": "Designed for comfort and long-lasting wear.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 13,
+        "fields": {
+            "product_id": 5,
+            "title": "Elegant evening dress for special occasions.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 14,
+        "fields": {
+            "product_id": 5,
+            "title": "Made with high-quality polyester and lace.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 15,
+        "fields": {
+            "product_id": 5,
+            "title": "Perfect fit with adjustable straps.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 16,
+        "fields": {
+            "product_id": 6,
+            "title": "Exquisite gold earrings for any occasion.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 17,
+        "fields": {
+            "product_id": 6,
+            "title": "Hypoallergenic and lightweight design.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 18,
+        "fields": {
+            "product_id": 6,
+            "title": "Available in 18k and 24k options.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 19,
+        "fields": {
+            "product_id": 7,
+            "title": "Modern sofa designed for maximum comfort.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 20,
+        "fields": {
+            "product_id": 7,
+            "title": "Features a stain-resistant fabric.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 21,
+        "fields": {
+            "product_id": 7,
+            "title": "Available in multiple configurations.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 22,
+        "fields": {
+            "product_id": 8,
+            "title": "Durable gardening shovel with ergonomic handle.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 23,
+        "fields": {
+            "product_id": 8,
+            "title": "Made from high-quality steel for long-lasting use.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 24,
+        "fields": {
+            "product_id": 8,
+            "title": "Ideal for both beginners and professionals.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 25,
+        "fields": {
+            "product_id": 9,
+            "title": "Beautiful wall painting to enhance your decor.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 26,
+        "fields": {
+            "product_id": 9,
+            "title": "Available in abstract and landscape designs.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 27,
+        "fields": {
+            "product_id": 9,
+            "title": "Perfect gift for art lovers.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 28,
+        "fields": {
+            "product_id": 10,
+            "title": "High-performance treadmill for home workouts.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 29,
+        "fields": {
+            "product_id": 10,
+            "title": "Features a foldable design for easy storage.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 30,
+        "fields": {
+            "product_id": 10,
+            "title": "Includes a heart rate monitor.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 31,
+        "fields": {
+            "product_id": 11,
+            "title": "Reliable tent designed for outdoor adventures.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 32,
+        "fields": {
+            "product_id": 11,
+            "title": "Fully waterproof with sturdy poles.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 33,
+        "fields": {
+            "product_id": 11,
+            "title": "Fits up to 4 people comfortably.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 34,
+        "fields": {
+            "product_id": 12,
+            "title": "High-quality football kit for players and teams.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 35,
+        "fields": {
+            "product_id": 12,
+            "title": "Includes jersey, shorts, and socks.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 36,
+        "fields": {
+            "product_id": 12,
+            "title": "Breathable material for enhanced comfort.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 37,
+        "fields": {
+            "product_id": 13,
+            "title": "Premium moisturizing cream for healthy skin.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 38,
+        "fields": {
+            "product_id": 13,
+            "title": "Fragrance-free and suitable for sensitive skin.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 39,
+        "fields": {
+            "product_id": 13,
+            "title": "Provides 24-hour hydration.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 40,
+        "fields": {
+            "product_id": 14,
+            "title": "Vibrant lipstick set for a flawless look.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 41,
+        "fields": {
+            "product_id": 14,
+            "title": "Available in matte and glossy finishes.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 42,
+        "fields": {
+            "product_id": 14,
+            "title": "Long-lasting and easy to apply.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 43,
+        "fields": {
+            "product_id": 15,
+            "title": "Boosts immunity with essential nutrients.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 44,
+        "fields": {
+            "product_id": 15,
+            "title": "Easy-to-chew Vitamin C tablets.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 45,
+        "fields": {
+            "product_id": 15,
+            "title": "Recommended dosage: one tablet per day.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 46,
+        "fields": {
+            "product_id": 16,
+            "title": "Collectible superhero figure for enthusiasts.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 47,
+        "fields": {
+            "product_id": 16,
+            "title": "Poseable with multiple articulation points.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 48,
+        "fields": {
+            "product_id": 16,
+            "title": "Perfect for display or play.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 49,
+        "fields": {
+            "product_id": 17,
+            "title": "Educational math toy for kids.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 50,
+        "fields": {
+            "product_id": 17,
+            "title": "Encourages learning through play.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 51,
+        "fields": {
+            "product_id": 17,
+            "title": "Made from safe, durable materials.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 52,
+        "fields": {
+            "product_id": 18,
+            "title": "Classic chess board for players of all levels.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 53,
+        "fields": {
+            "product_id": 18,
+            "title": "Available in wooden and magnetic versions.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_abouts.productabout",
+        "pk": 54,
+        "fields": {
+            "product_id": 18,
+            "title": "Perfect for friendly matches and tournaments.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "model": "product_tags.producttag",
+        "pk": 1,
+        "fields": {
+            "product_id": 1,
+            "title": "organic",
+            "created_at": "2024-12-15 12:34:56",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_tags.producttag",
+        "pk": 2,
+        "fields": {
+            "product_id": 1,
+            "title": "fresh",
+            "created_at": "2024-12-15 12:35:12",
+            "is_active": false
+        }
+    },
+    {
+        "model": "product_tags.producttag",
+        "pk": 3,
+        "fields": {
+            "product_id": 3,
+            "title": "vegan",
+            "created_at": "2024-12-15 12:35:45",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_tags.producttag",
+        "pk": 4,
+        "fields": {
+            "product_id": 1,
+            "title": "new",
+            "created_at": "2024-12-15 12:36:05",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_tags.producttag",
+        "pk": 5,
+        "fields": {
+            "product_id": 4,
+            "title": "premium",
+            "created_at": "2024-12-15 12:36:25",
+            "is_active": false
+        }
+    },
+    {
+        "model": "product_tags.producttag",
+        "pk": 6,
+        "fields": {
+            "product_id": 15,
+            "title": "handmade",
+            "created_at": "2024-12-15 12:36:50",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_tags.producttag",
+        "pk": 7,
+        "fields": {
+            "product_id": 16,
+            "title": "eco",
+            "created_at": "2024-12-15 12:37:15",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_tags.producttag",
+        "pk": 8,
+        "fields": {
+            "product_id": 17,
+            "title": "natural",
+            "created_at": "2024-12-15 12:37:35",
+            "is_active": false
+        }
+    },
+    {
+        "model": "product_tags.producttag",
+        "pk": 9,
+        "fields": {
+            "product_id": 8,
+            "title": "special",
+            "created_at": "2024-12-15 12:37:55",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_tags.producttag",
+        "pk": 10,
+        "fields": {
+            "product_id": 19,
+            "title": "exclusive",
+            "created_at": "2024-12-15 12:38:15",
+            "is_active": false
+        }
+    }
+]

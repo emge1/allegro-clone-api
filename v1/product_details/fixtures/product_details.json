@@ -1,0 +1,442 @@
+[
+    {
+        "model": "product_details.productdetail",
+        "pk": 1,
+        "fields": {
+            "product_id": 1,
+            "title": "Display",
+            "title_details": "6.1-inch Super Retina XDR",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 2,
+        "fields": {
+            "product_id": 1,
+            "title": "Processor",
+            "title_details": "A16 Bionic Chip",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 3,
+        "fields": {
+            "product_id": 2,
+            "title": "Weight",
+            "title_details": "2.8 lbs",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 4,
+        "fields": {
+            "product_id": 2,
+            "title": "Battery Life",
+            "title_details": "Up to 18 hours",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 5,
+        "fields": {
+            "product_id": 3,
+            "title": "Resolution",
+            "title_details": "24.2 megapixels",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 6,
+        "fields": {
+            "product_id": 3,
+            "title": "Lens Mount",
+            "title_details": "Canon RF Mount",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 7,
+        "fields": {
+            "product_id": 4,
+            "title": "Material",
+            "title_details": "Genuine Leather",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 8,
+        "fields": {
+            "product_id": 4,
+            "title": "Color Options",
+            "title_details": "Black, Brown",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 9,
+        "fields": {
+            "product_id": 5,
+            "title": "Material",
+            "title_details": "Polyester and Lace",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 10,
+        "fields": {
+            "product_id": 5,
+            "title": "Available Sizes",
+            "title_details": "S, M, L, XL",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 11,
+        "fields": {
+            "product_id": 6,
+            "title": "Material",
+            "title_details": "18k Gold",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 12,
+        "fields": {
+            "product_id": 6,
+            "title": "Weight",
+            "title_details": "5 grams",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 13,
+        "fields": {
+            "product_id": 7,
+            "title": "Dimensions",
+            "title_details": "80x35x30 inches",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 14,
+        "fields": {
+            "product_id": 7,
+            "title": "Fabric",
+            "title_details": "Stain-Resistant Polyester",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 15,
+        "fields": {
+            "product_id": 8,
+            "title": "Material",
+            "title_details": "Steel and Plastic",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 16,
+        "fields": {
+            "product_id": 8,
+            "title": "Length",
+            "title_details": "40 inches",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 17,
+        "fields": {
+            "product_id": 9,
+            "title": "Dimensions",
+            "title_details": "24x36 inches",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 18,
+        "fields": {
+            "product_id": 9,
+            "title": "Theme",
+            "title_details": "Abstract, Landscape",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 19,
+        "fields": {
+            "product_id": 10,
+            "title": "Max Weight Capacity",
+            "title_details": "300 lbs",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 20,
+        "fields": {
+            "product_id": 10,
+            "title": "Features",
+            "title_details": "Heart Rate Monitor, Foldable",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 21,
+        "fields": {
+            "product_id": 11,
+            "title": "Capacity",
+            "title_details": "2-4 People",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 22,
+        "fields": {
+            "product_id": 11,
+            "title": "Waterproof",
+            "title_details": "Yes",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 23,
+        "fields": {
+            "product_id": 12,
+            "title": "Material",
+            "title_details": "High-Quality Polyester",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 24,
+        "fields": {
+            "product_id": 12,
+            "title": "Includes",
+            "title_details": "Jersey, Shorts, Socks",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 25,
+        "fields": {
+            "product_id": 13,
+            "title": "Volume",
+            "title_details": "50ml",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 26,
+        "fields": {
+            "product_id": 13,
+            "title": "Features",
+            "title_details": "Fragrance-Free, For Sensitive Skin",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 27,
+        "fields": {
+            "product_id": 14,
+            "title": "Colors",
+            "title_details": "Matte, Glossy",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 28,
+        "fields": {
+            "product_id": 14,
+            "title": "Lasting Time",
+            "title_details": "Up to 8 hours",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 29,
+        "fields": {
+            "product_id": 15,
+            "title": "Form",
+            "title_details": "Chewable Tablets",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 30,
+        "fields": {
+            "product_id": 15,
+            "title": "Dosage",
+            "title_details": "1 tablet per day",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 31,
+        "fields": {
+            "product_id": 16,
+            "title": "Height",
+            "title_details": "12 inches",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 32,
+        "fields": {
+            "product_id": 16,
+            "title": "Articulation",
+            "title_details": "Multiple Poseable Points",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 33,
+        "fields": {
+            "product_id": 17,
+            "title": "Age Group",
+            "title_details": "6-10 years",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 34,
+        "fields": {
+            "product_id": 17,
+            "title": "Batteries Required",
+            "title_details": "No",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 35,
+        "fields": {
+            "product_id": 18,
+            "title": "Type",
+            "title_details": "Wooden, Magnetic",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 36,
+        "fields": {
+            "product_id": 18,
+            "title": "Dimensions",
+            "title_details": "15x15 inches",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 37,
+        "fields": {
+            "product_id": 19,
+            "title": "Rotation",
+            "title_details": "360 degrees",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 38,
+        "fields": {
+            "product_id": 19,
+            "title": "Compatibility",
+            "title_details": "Most Phones",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 39,
+        "fields": {
+            "product_id": 20,
+            "title": "Sizes",
+            "title_details": "S, M, L",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_details.productdetail",
+        "pk": 40,
+        "fields": {
+            "product_id": 20,
+            "title": "Safety Standard",
+            "title_details": "DOT Certified",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    }
+]
