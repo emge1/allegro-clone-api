@@ -2,13 +2,18 @@
 
 set -e
 
-python manage.py makemigrations
+echo "Waiting for PostgreSQL to be ready..."
+
+while ! nc -z "$DB_HOST" "5432"; do
+  echo "PostgreSQL is not ready. Waiting..."
+  sleep 1
+done
+
+echo "PostgreSQL is ready."
+
+sleep 10
+
 python manage.py migrate
-
-sleep 5
-
-echo "Database synchronization"
-sqlite3 /app/config/db.sqlite3 ".tables"
 
 echo "Running load_sample_data.sh..."
 /bin/bash /app/load_sample_data.sh
