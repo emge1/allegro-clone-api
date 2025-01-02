@@ -1,0 +1,382 @@
+[
+    {
+        "model": "products.product",
+        "pk": 1,
+        "fields": {
+            "url_slug": "iphone-15",
+            "subcategories_id": 1,
+            "name": "iPhone 15",
+            "brand": "Apple",
+            "max_price": "999.99",
+            "discount_price": "949.99",
+            "thumbnail": "iphone-15.jpg",
+            "description": "The latest smartphone from Apple.",
+            "long_description": "The latest and most advanced smartphone from Apple with cutting-edge technology.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 50,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "url_slug": "macbook-air",
+            "subcategories_id": 2,
+            "name": "MacBook Air",
+            "brand": "Apple",
+            "max_price": "1199.99",
+            "discount_price": "1149.99",
+            "thumbnail": "",
+            "description": "Lightweight and powerful laptop.",
+            "long_description": "A lightweight, yet powerful laptop perfect for professionals on the go.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 30,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+            "url_slug": "canon-eos-r10",
+            "subcategories_id": 3,
+            "name": "Canon EOS R10",
+            "brand": "Canon",
+            "max_price": "899.99",
+            "discount_price": "849.99",
+            "thumbnail": "",
+            "description": "Mirrorless camera for professionals.",
+            "long_description": "A high-quality mirrorless camera designed for photography enthusiasts and professionals.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 15,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 4,
+        "fields": {
+            "url_slug": "mens-leather-jacket",
+            "subcategories_id": 4,
+            "name": "Mens Leather Jacket",
+            "brand": "Stylish Wear",
+            "max_price": "149.99",
+            "discount_price": "139.99",
+            "thumbnail": "",
+            "description": "Stylish and durable leather jacket.",
+            "long_description": "A premium leather jacket for men, combining style and durability.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 40,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 5,
+        "fields": {
+            "url_slug": "womens-evening-dress",
+            "subcategories_id": 5,
+            "name": "Women's Evening Dress",
+            "brand": "Elegant Attire",
+            "max_price": "199.99",
+            "discount_price": "189.99",
+            "thumbnail": "",
+            "description": "Elegant evening dress for women.",
+            "long_description": "An elegant and sophisticated evening dress, perfect for formal occasions.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 25,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 6,
+        "fields": {
+            "url_slug": "gold-earrings",
+            "subcategories_id": 6,
+            "name": "Gold Earrings",
+            "brand": "Golden Touch",
+            "max_price": "299.99",
+            "discount_price": "289.99",
+            "thumbnail": "",
+            "description": "Elegant gold earrings.",
+            "long_description": "Exquisite gold earrings, perfect for adding elegance to any outfit.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 10,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 7,
+        "fields": {
+            "url_slug": "modern-sofa",
+            "subcategories_id": 7,
+            "name": "Modern Sofa",
+            "brand": "Home Comfort",
+            "max_price": "499.99",
+            "discount_price": "479.99",
+            "thumbnail": "",
+            "description": "Comfortable sofa for your home.",
+            "long_description": "A modern, comfortable sofa to enhance your living space.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 8,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 8,
+        "fields": {
+            "url_slug": "gardening-shovel",
+            "subcategories_id": 8,
+            "name": "Gardening Shovel",
+            "brand": "Garden Tools",
+            "max_price": "19.99",
+            "discount_price": "17.99",
+            "thumbnail": "",
+            "description": "Durable shovel for gardening.",
+            "long_description": "A reliable and durable shovel, perfect for all your gardening needs.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 100,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 9,
+        "fields": {
+            "url_slug": "wall-painting",
+            "subcategories_id": 9,
+            "name": "Wall Painting",
+            "brand": "Art Decor",
+            "max_price": "129.99",
+            "discount_price": "119.99",
+            "thumbnail": "",
+            "description": "Beautiful painting to decorate your home.",
+            "long_description": "A stunning wall painting to elevate your home decor.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 20,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 10,
+        "fields": {
+            "url_slug": "treadmill-pro",
+            "subcategories_id": 10,
+            "name": "Treadmill Pro",
+            "brand": "Fitness Gear",
+            "max_price": "899.99",
+            "discount_price": "849.99",
+            "thumbnail": "",
+            "description": "High-end treadmill for your fitness needs.",
+            "long_description": "A professional-grade treadmill for your fitness goals.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 5,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 11,
+        "fields": {
+            "url_slug": "camping-tent",
+            "subcategories_id": 11,
+            "name": "Camping Tent",
+            "brand": "Outdoor Adventures",
+            "max_price": "79.99",
+            "discount_price": "69.99",
+            "thumbnail": "",
+            "description": "Durable tent for outdoor adventures.",
+            "long_description": "A reliable and durable tent, ideal for camping enthusiasts.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 30,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 12,
+        "fields": {
+            "url_slug": "football-kit",
+            "subcategories_id": 12,
+            "name": "Football Kit",
+            "brand": "Sports Gear",
+            "max_price": "59.99",
+            "discount_price": "49.99",
+            "thumbnail": "",
+            "description": "Complete football kit for teams.",
+            "long_description": "A complete and high-quality football kit for teams and players.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 60,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 13,
+        "fields": {
+            "url_slug": "moisturizing-cream",
+            "subcategories_id": 13,
+            "name": "Moisturizing Cream",
+            "brand": "Skin Care",
+            "max_price": "19.99",
+            "discount_price": "15.99",
+            "thumbnail": "",
+            "description": "Keep your skin hydrated.",
+            "long_description": "A premium moisturizing cream to keep your skin healthy and hydrated.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 200,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 14,
+        "fields": {
+            "url_slug": "lipstick-set",
+            "subcategories_id": 14,
+            "name": "Lipstick Set",
+            "brand": "Beauty Essentials",
+            "max_price": "29.99",
+            "discount_price": "24.99",
+            "thumbnail": "",
+            "description": "Set of vibrant lipsticks.",
+            "long_description": "A vibrant and long-lasting lipstick set for a perfect look.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 80,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 15,
+        "fields": {
+            "url_slug": "vitamin-c-tablets",
+            "subcategories_id": 15,
+            "name": "Vitamin C Tablets",
+            "brand": "Health Plus",
+            "max_price": "14.99",
+            "discount_price": "12.99",
+            "thumbnail": "",
+            "description": "Boost your immune system.",
+            "long_description": "Vitamin C tablets to enhance your immune system.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 100,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 16,
+        "fields": {
+            "url_slug": "superhero-figure",
+            "subcategories_id": 16,
+            "name": "Superhero Figure",
+            "brand": "Collector's Haven",
+            "max_price": "39.99",
+            "discount_price": "34.99",
+            "thumbnail": "",
+            "description": "Collectible superhero figure.",
+            "long_description": "A collectible superhero figure for fans and enthusiasts.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 50,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 17,
+        "fields": {
+            "url_slug": "math-learning-toy",
+            "subcategories_id": 17,
+            "name": "Math Learning Toy",
+            "brand": "EduToys",
+            "max_price": "24.99",
+            "discount_price": "19.99",
+            "thumbnail": "",
+            "description": "Educational toy for kids.",
+            "long_description": "An engaging and educational math learning toy for kids.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 70,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 18,
+        "fields": {
+            "url_slug": "chess-board",
+            "subcategories_id": 18,
+            "name": "Chess Board",
+            "brand": "Classic Games",
+            "max_price": "19.99",
+            "discount_price": "15.99",
+            "thumbnail": "",
+            "description": "Classic chess board game.",
+            "long_description": "A classic chess board game for players of all ages.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 90,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 19,
+        "fields": {
+            "url_slug": "car-phone-holder",
+            "subcategories_id": 19,
+            "name": "Car Phone Holder",
+            "brand": "Car Essentials",
+            "max_price": "14.99",
+            "discount_price": "12.99",
+            "thumbnail": "",
+            "description": "Phone holder for your car.",
+            "long_description": "A secure and adjustable car phone holder.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 150,
+            "is_active": true
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 20,
+        "fields": {
+            "url_slug": "motorbike-helmet",
+            "subcategories_id": 20,
+            "name": "Motorbike Helmet",
+            "brand": "RideSafe",
+            "max_price": "99.99",
+            "discount_price": "89.99",
+            "thumbnail": "",
+            "description": "Protective helmet for motorbikes.",
+            "long_description": "A durable and safe helmet for motorbike riders.",
+            "created_at": "2024-01-01T00:00:00Z",
+            "added_by": 3,
+            "in_stock_total": 20,
+            "is_active": true
+        }
+    }
+]
