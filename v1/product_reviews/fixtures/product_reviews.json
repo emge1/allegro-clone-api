@@ -1,0 +1,522 @@
+[
+    {
+        "model": "product_reviews.productreview",
+        "pk": 1,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review1_image.jpg",
+            "rating": 5,
+            "review": "Sample review 1",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 2,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review2_image.jpg",
+            "rating": 4,
+            "review": "Sample review 2",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 3,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review3_image.jpg",
+            "rating": 5,
+            "review": "Sample review 3",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 4,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review4_image.jpg",
+            "rating": 4,
+            "review": "Sample review 4",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 5,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review5_image.jpg",
+            "rating": 5,
+            "review": "Sample review 5",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 6,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review6_image.jpg",
+            "rating": 4,
+            "review": "Sample review 6",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 7,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review7_image.jpg",
+            "rating": 5,
+            "review": "Sample review 7",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 8,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review8_image.jpg",
+            "rating": 4,
+            "review": "Sample review 8",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 9,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review9_image.jpg",
+            "rating": 5,
+            "review": "Sample review 9",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 10,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review10_image.jpg",
+            "rating": 4,
+            "review": "Sample review 10",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 11,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review11_image.jpg",
+            "rating": 5,
+            "review": "Sample review 11",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 12,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review12_image.jpg",
+            "rating": 4,
+            "review": "Sample review 12",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 13,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review13_image.jpg",
+            "rating": 5,
+            "review": "Sample review 13",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 14,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review14_image.jpg",
+            "rating": 4,
+            "review": "Sample review 14",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 15,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review15_image.jpg",
+            "rating": 5,
+            "review": "Sample review 15",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 16,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review16_image.jpg",
+            "rating": 4,
+            "review": "Sample review 16",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 17,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review17_image.jpg",
+            "rating": 5,
+            "review": "Sample review 17",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 18,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review18_image.jpg",
+            "rating": 4,
+            "review": "Sample review 18",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 19,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review19_image.jpg",
+            "rating": 5,
+            "review": "Sample review 19",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 20,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review20_image.jpg",
+            "rating": 4,
+            "review": "Sample review 20",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 21,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review21_image.jpg",
+            "rating": 5,
+            "review": "Sample review 21",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 22,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review22_image.jpg",
+            "rating": 4,
+            "review": "Sample review 22",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 23,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review23_image.jpg",
+            "rating": 5,
+            "review": "Sample review 23",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 24,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review24_image.jpg",
+            "rating": 4,
+            "review": "Sample review 24",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 25,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review25_image.jpg",
+            "rating": 5,
+            "review": "Sample review 25",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 26,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review26_image.jpg",
+            "rating": 4,
+            "review": "Sample review 26",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 27,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review27_image.jpg",
+            "rating": 5,
+            "review": "Sample review 27",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 28,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review28_image.jpg",
+            "rating": 4,
+            "review": "Sample review 28",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 29,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review29_image.jpg",
+            "rating": 5,
+            "review": "Sample review 29",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 30,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review30_image.jpg",
+            "rating": 4,
+            "review": "Sample review 30",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 31,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review31_image.jpg",
+            "rating": 5,
+            "review": "Sample review 31",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 32,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review32_image.jpg",
+            "rating": 4,
+            "review": "Sample review 32",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 33,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review33_image.jpg",
+            "rating": 5,
+            "review": "Sample review 33",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 34,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review34_image.jpg",
+            "rating": 4,
+            "review": "Sample review 34",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 35,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review35_image.jpg",
+            "rating": 5,
+            "review": "Sample review 35",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 36,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review36_image.jpg",
+            "rating": 4,
+            "review": "Sample review 36",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 37,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review37_image.jpg",
+            "rating": 5,
+            "review": "Sample review 37",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 38,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review38_image.jpg",
+            "rating": 4,
+            "review": "Sample review 38",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 39,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review39_image.jpg",
+            "rating": 5,
+            "review": "Sample review 39",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_reviews.productreview",
+        "pk": 40,
+        "fields": {
+            "product_id": 4,
+            "user_id": 4,
+            "review_image": "review40_image.jpg",
+            "rating": 4,
+            "review": "Sample review 40",
+            "created_at": "2025-01-02T09:26:19.275147",
+            "is_active": true
+        }
+    }
+]

@@ -1,0 +1,442 @@
+[
+    {
+        "model": "product_medias.productmedia",
+        "pk": 1,
+        "fields": {
+            "product_id": 1,
+            "type": "image",
+            "content": "iphone-15-front.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 2,
+        "fields": {
+            "product_id": 1,
+            "type": "image",
+            "content": "iphone-15-back.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 3,
+        "fields": {
+            "product_id": 2,
+            "type": "image",
+            "content": "macbook-air-front.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 4,
+        "fields": {
+            "product_id": 2,
+            "type": "video",
+            "content": "macbook-air-ad.mp4",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 5,
+        "fields": {
+            "product_id": 3,
+            "type": "image",
+            "content": "canon-eos-r10-body.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 6,
+        "fields": {
+            "product_id": 3,
+            "type": "image",
+            "content": "canon-eos-r10-lens.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 7,
+        "fields": {
+            "product_id": 4,
+            "type": "image",
+            "content": "mens-leather-jacket-black.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 8,
+        "fields": {
+            "product_id": 4,
+            "type": "image",
+            "content": "mens-leather-jacket-brown.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 9,
+        "fields": {
+            "product_id": 5,
+            "type": "image",
+            "content": "womens-evening-dress-red.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 10,
+        "fields": {
+            "product_id": 5,
+            "type": "image",
+            "content": "womens-evening-dress-blue.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 11,
+        "fields": {
+            "product_id": 6,
+            "type": "image",
+            "content": "gold-earrings-front.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 12,
+        "fields": {
+            "product_id": 6,
+            "type": "image",
+            "content": "gold-earrings-side.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 13,
+        "fields": {
+            "product_id": 7,
+            "type": "image",
+            "content": "modern-sofa-main.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 14,
+        "fields": {
+            "product_id": 7,
+            "type": "video",
+            "content": "modern-sofa-demo.mp4",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 15,
+        "fields": {
+            "product_id": 8,
+            "type": "image",
+            "content": "gardening-shovel-small.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 16,
+        "fields": {
+            "product_id": 8,
+            "type": "image",
+            "content": "gardening-shovel-large.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 17,
+        "fields": {
+            "product_id": 9,
+            "type": "image",
+            "content": "wall-painting-abstract.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 18,
+        "fields": {
+            "product_id": 9,
+            "type": "image",
+            "content": "wall-painting-landscape.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 19,
+        "fields": {
+            "product_id": 10,
+            "type": "image",
+            "content": "treadmill-pro-main.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 20,
+        "fields": {
+            "product_id": 10,
+            "type": "video",
+            "content": "treadmill-pro-demo.mp4",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 21,
+        "fields": {
+            "product_id": 11,
+            "type": "image",
+            "content": "camping-tent-2-person.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 22,
+        "fields": {
+            "product_id": 11,
+            "type": "image",
+            "content": "camping-tent-4-person.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 23,
+        "fields": {
+            "product_id": 12,
+            "type": "image",
+            "content": "football-kit-home.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 24,
+        "fields": {
+            "product_id": 12,
+            "type": "image",
+            "content": "football-kit-away.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 25,
+        "fields": {
+            "product_id": 13,
+            "type": "image",
+            "content": "moisturizing-cream-50ml.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 26,
+        "fields": {
+            "product_id": 13,
+            "type": "image",
+            "content": "moisturizing-cream-100ml.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 27,
+        "fields": {
+            "product_id": 14,
+            "type": "image",
+            "content": "lipstick-set-matte.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 28,
+        "fields": {
+            "product_id": 14,
+            "type": "image",
+            "content": "lipstick-set-glossy.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 29,
+        "fields": {
+            "product_id": 15,
+            "type": "image",
+            "content": "vitamin-c-tablets-30-pack.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 30,
+        "fields": {
+            "product_id": 15,
+            "type": "image",
+            "content": "vitamin-c-tablets-60-pack.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 31,
+        "fields": {
+            "product_id": 16,
+            "type": "image",
+            "content": "superhero-figure-classic.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 32,
+        "fields": {
+            "product_id": 16,
+            "type": "video",
+            "content": "superhero-figure-showcase.mp4",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 33,
+        "fields": {
+            "product_id": 17,
+            "type": "image",
+            "content": "math-learning-toy-basic.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 34,
+        "fields": {
+            "product_id": 17,
+            "type": "image",
+            "content": "math-learning-toy-advanced.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 35,
+        "fields": {
+            "product_id": 18,
+            "type": "image",
+            "content": "chess-board-wooden.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 36,
+        "fields": {
+            "product_id": 18,
+            "type": "image",
+            "content": "chess-board-magnetic.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 37,
+        "fields": {
+            "product_id": 19,
+            "type": "image",
+            "content": "car-phone-holder-dashboard.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 38,
+        "fields": {
+            "product_id": 19,
+            "type": "video",
+            "content": "car-phone-holder-demo.mp4",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 39,
+        "fields": {
+            "product_id": 20,
+            "type": "image",
+            "content": "motorbike-helmet-full-face.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product_medias.productmedia",
+        "pk": 40,
+        "fields": {
+            "product_id": 20,
+            "type": "image",
+            "content": "motorbike-helmet-open-face.jpg",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        }
+    }
+]
