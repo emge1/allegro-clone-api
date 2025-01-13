@@ -21,12 +21,12 @@ jobs:
 
     services:
       postgres:
+        container_name: ci-postgres
         image: postgres:17
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
           POSTGRES_DB: ci_database
-          POSTGRES_HOST: localhost
         ports:
           - 5432:5432
         options: >-
@@ -60,6 +60,10 @@ jobs:
             -e DJANGO_SETTINGS_MODULE=config.settings.ci \
             -e SECRET_KEY=${{ secrets.SECRET_KEY }} \
             -e ENVIRONMENT=${{ secrets.ENVIRONMENT }} \
+            -e POSTGRES_USER=postgres \
+            -e POSTGRES_PASSWORD=postgres \
+            -e POSTGRES_DB=ci_database \
+            -e POSTGRES_HOST=ci-postgres \
             -v ${{ github.workspace }}:/workspace \
             -w /workspace \
             --entrypoint "" \

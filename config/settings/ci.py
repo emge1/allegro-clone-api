@@ -8,7 +8,7 @@ DATABASES = {
         'NAME': 'ci_database',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': 'postgres',
+        'HOST': 'ci-postgres',
         'PORT': 5432,
     }
 }
