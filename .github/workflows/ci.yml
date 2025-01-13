@@ -46,20 +46,16 @@ jobs:
         run: |
           docker build --build-arg REQUIREMENTS=requirements/development.txt -t ci-image .
 
-      - name: Wait for PostgreSQL
-        run: |
-          echo "Waiting for PostgreSQL to be ready..."
-          until pg_isready -h localhost -p 5432 -U postgres; do
-            sleep 5;
-          done
-          echo "PostgreSQL is ready!"
-
       - name: Run Tests
         run: |
           docker run --rm \
             -e DJANGO_SETTINGS_MODULE=config.settings.ci \
             -e SECRET_KEY=${{ secrets.SECRET_KEY }} \
             -e ENVIRONMENT=${{ secrets.ENVIRONMENT }} \
+            -e POSTGRES_USER=postgres \
+            -e POSTGRES_PASSWORD=postgres \
+            -e POSTGRES_DB=ci_database \
+            -e POSTGRES_HOST=postgres \
             -v ${{ github.workspace }}:/workspace \
             -w /workspace \
             --entrypoint "" \
