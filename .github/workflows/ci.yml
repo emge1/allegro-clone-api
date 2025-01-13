@@ -46,6 +46,10 @@ jobs:
         run: |
           docker build --build-arg REQUIREMENTS=requirements/development.txt -t ci-image .
 
+      - name: Debug PostgreSQL
+        run: |
+          docker exec -it $(docker ps -q --filter name=postgres) pg_isready -U postgres
+
       - name: Run Tests
         run: |
           docker run --rm \
