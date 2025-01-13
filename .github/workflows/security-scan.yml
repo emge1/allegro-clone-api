@@ -16,6 +16,9 @@ jobs:
   security-scan:
     runs-on: ubuntu-latest
 
+    env:
+      DJANGO_SETTINGS_MODULE: config.settings.ci
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
