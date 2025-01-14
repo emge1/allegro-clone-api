@@ -7,7 +7,7 @@ resource "aws_vpc" "main" {
   }
 }
 
-resource "aws_subnet" "private_rds" {
+resource "aws_subnet" "private_rds-a" {
   vpc_id = aws_vpc.main.id
   cidr_block = "10.0.1.0/24"
   availability_zone = "eu-central-1a"
@@ -35,7 +35,7 @@ resource "aws_subnet" "public-reverse-proxy" {
   }
 }
 
-resource "aws_subnet" "private-rds" {
+resource "aws_subnet" "private-rds-b" {
   vpc_id = aws_vpc.main.id
   cidr_block = "10.0.4.0/24"
   map_public_ip_on_launch = true
