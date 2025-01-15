@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+export $(grep -v '^#' .env | xargs)
+
 if [ -z "$ENVIRONMENT" ]; then
   echo "Error: ENVIRONMENT is not set in .env file."
   exit 1
