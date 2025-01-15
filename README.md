@@ -16,7 +16,6 @@ functionality and simulate real-world payment processes.
   * [Features](#features)
 * [Project setup](#project-setup)
   * [Using Virtual Environment](#using-virtual-environment)
-  * [Using Docker: Build and Run](#using-docker-build-and-run)
   * [Using Docker Compose](#using-docker-compose)
 * [Dependencies](#dependencies)
   * [Backend](#backend)
@@ -42,7 +41,8 @@ functionality and simulate real-world payment processes.
 * Test coverage to ensure reliability.
 * Integration with Github Actions: 
   * CI workflow, including testing and building,
-  * Trivy to ensure cybersecurity by scanning Docker images on each pull request and main branch push.
+  * Trivy to ensure cybersecurity by scanning Docker images on each pull request and main branch push,
+  * CD pipeline for automated deployment to AWS and Vercel, including Docker image pushes and Terraform-based infrastructure updates (in progress)
 * Support for both local development and production environments using Docker and docker-compose.
 * Development logging outputs debug-level logs to the console for effective debugging with Django Debug Toolbar.
 * Production-Grade Logging and Monitoring:
@@ -69,10 +69,14 @@ Clone the repository:
 git clone https://github.com/emge1/allegro-clone-api.git
 cd allegro-clone-api
 ```
-Create .env file and add the secret key:
+Create .env file, add the secret key and set environment to local:
 ```bash
-echo "SECRET_KEY=secret_key" > .env
+cat <<EOT > .env
+SECRET_KEY=secret_key
+ENVIRONMENT=local
+EOT
 ```
+
 Set up a virtual environment:
 
 ```bash
@@ -106,31 +110,6 @@ Access the application at http://localhost:8000/.
 
 To experience the fullstack application, please set up the [frontend](https://github.com/emge1/allegro-clone-frontend) as well.
 
-## Using Docker Build and Run
-
-Clone the repository:
-```bash
-git clone https://github.com/emge1/allegro-clone-api.git
-cd allegro-clone-api
-```
-Create .env file and add the secret key:
-
-```bash
-echo "SECRET_KEY=secret_key" > .env
-```
-Build Docker image:
-```bash
-docker build -t myclone:latest .
-```
-And run Docker container:
-```bash
-docker run --env-file .env -p 8000:8000  myclone:latest
-```
-Access the application at http://localhost:8000/.
-
-To experience the fullstack application, please set up the [frontend](https://github.com/emge1/allegro-clone-frontend) as well.
-
-
 ## Using Docker Compose
 
 Clone both backend and the frontend repository:
@@ -140,14 +119,33 @@ git clone https://github.com/emge1/allegro-clone-api.git
 git clone https://github.com/emge1/allegro-clone-frontend.git
 cd allegro-clone-api
 ```
-Create .env file and add the secret key:
+Create .env file:
 
 ```bash
-echo "SECRET_KEY=secret_key" > .env
+cat <<EOT > .env
+SECRET_KEY=secret_key
+EMAIL_ADMIN=admin@example.com
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER=your_email@gmail.com
+EMAIL_HOST_PASSWORD=your_password
+
+DB_HOST=db_production
+POSTGRES_USER=postgres_user
+POSTGRES_PASSWORD=postgres_password
+POSTGRES_DB=postgres_db
+GF_SECURITY_ADMIN_PASSWORD=gf_security_admin_password
+
+ENVIRONMENT=production  # or development
 ```
 And run docker compose:
 ```bash
-docker compose up web frontend
+# if ENVIRONMENT=production
+docker compose up web_prod frontend db_production prometheus grafana
+
+# if ENVIRONMENT=development
+docker compose up web_dev frontend db_production
 ```
 Access the application at http://localhost:3000/.
 
@@ -159,14 +157,18 @@ Access the application at http://localhost:3000/.
 * Python Decouple
 * Pillow
 * Django Cors Headers
+* Pytest
+* Pytest Cov
+* Pytest Django
+* Pytest JUnitXML
 
 ### Local
 * Django Debug Toolbar
-* Pytest
-* Pytest Django
-* Pytest Cov
-* Pytest JUnitXML
 * SQLite
+
+### Development
+* Django Debug Toolbar
+* Postgres 
 
 ### Prodcution
 * Postgres 
