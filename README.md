@@ -156,14 +156,18 @@ Access the application at http://localhost:3000/.
 * Python Decouple
 * Pillow
 * Django Cors Headers
+* Pytest
+* Pytest Cov
+* Pytest Django
+* Pytest JUnitXML
 
 ### Local
 * Django Debug Toolbar
-* Pytest
-* Pytest Django
-* Pytest Cov
-* Pytest JUnitXML
 * SQLite
+
+### Development
+* Django Debug Toolbar
+* Postgres 
 
 ### Prodcution
 * Postgres 
