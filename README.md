@@ -42,6 +42,7 @@ functionality and simulate real-world payment processes.
 * Integration with Github Actions: 
   * CI workflow, including testing and building,
   * Trivy to ensure cybersecurity by scanning Docker images on each pull request and main branch push,
+  * CD pipeline for automated deployment to AWS and Vercel, including Docker image pushes and Terraform-based infrastructure updates (in progress)
 * Support for both local development and production environments using Docker and docker-compose.
 * Development logging outputs debug-level logs to the console for effective debugging with Django Debug Toolbar.
 * Production-Grade Logging and Monitoring:
