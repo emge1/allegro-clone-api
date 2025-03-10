@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: ${{ env.REPO_URL }}
           ref: ${{ env.REPO_BRANCH  }}
@@ -40,7 +40,7 @@ jobs:
           output: trivy-report.json
 
       - name: Upload Trivy scan report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: trivy-scan-report
           path: trivy-report.json
