@@ -2,6 +2,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.pagination import PageNumberPagination
 from v1.products.models.product import Product
 from v1.products.serializers.product import ProductSerializer, ProductSerializerCreate, ProductSerializerUpdate
 from v1.utils import constants
@@ -28,7 +29,12 @@ class ProductView(APIView):
                 )
         else:
             products = Product.objects.all()
-        return Response(ProductSerializer(products, many=True).data)
+
+        paginator = PageNumberPagination()
+        paginated_products = paginator.paginate_queryset(products, request)
+        serializer = ProductSerializer(paginated_products, many=True)
+
+        return paginator.get_paginated_response(serializer.data)
 
     @staticmethod
     def post(request):
