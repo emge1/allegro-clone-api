@@ -55,7 +55,8 @@ functionality and simulate real-world payment processes.
 * Login authentication
 * Authorization with access token
 * Display random products and the cheapest one on the home page
-* Display itmes and subcategories on a category page
+* Display items and subcategories on a category page
+* Optimized product listing with API pagination
 * Display details of an item
 * Add an item to personal cart
 * Access to a cart only for authorized users
