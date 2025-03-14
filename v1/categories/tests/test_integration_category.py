@@ -72,7 +72,7 @@ class TestCategoryViews(APITestCase):
         print(f"Response JSON: {response.json()}")  # Debuguj odpowiedź API
         print(f"Status Code: {response.status_code}")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(len(response.json()), 2)
+        self.assertEqual(len(response.results.json()), 2)
         self.assertEqual(response.json()[0]["name"], "Product 1")
         self.assertEqual(response.json()[0]["max_price"], '99.99')
         self.assertEqual(response.json()[0]["thumbnail"], "/media/thumbnail4.jpg")
