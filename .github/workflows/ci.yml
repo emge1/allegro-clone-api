@@ -90,7 +90,7 @@ jobs:
             sh -c "
               python manage.py makemigrations &&
               python manage.py migrate &&
-              pytest -m "not integration" --junitxml=test-reports/unit.xml
+              pytest -m 'not integration' --junitxml=test-reports/unit.xml
             "
 
       - name: Upload Unit Test Report
@@ -133,7 +133,7 @@ jobs:
             sh -c "
               python manage.py makemigrations &&
               python manage.py migrate &&
-              pytest -m "integration" --junitxml=test-reports/integration.xml
+              pytest -m 'integration' --junitxml=test-reports/integration.xml
             "
 
       - name: Upload Integration Test Report
