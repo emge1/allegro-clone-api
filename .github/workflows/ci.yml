@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v*.*.*'
   pull_request:
     branches:
       - main
@@ -178,6 +180,34 @@ jobs:
       - name: Load Docker image
         run: docker load < ci-image.tar
 
+      - name: Set Docker Tags
+        if: success() && startsWith(github.ref, 'refs/tags/')
+        id: docker_tags
+        run: |
+          echo "sha_tag=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
+
+          if [[ $GITHUB_REF == refs/tags/* ]]; then
+            echo "ref_tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+          else
+            echo "ref_tag=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Login to DockerHub
+        if: success() && startsWith(github.ref, 'refs/tags/')
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+
+      - name: Tag Docker Image
+        if: success() && startsWith(github.ref, 'refs/tags/')
+        run: |
+          docker tag ci-image ${{ secrets.DOCKERHUB_USERNAME }}/clone-api:${{ steps.docker_tags.outputs.sha_tag }}
+          docker tag ci-image ${{ secrets.DOCKERHUB_USERNAME }}/clone-api:${{ steps.docker_tags.outputs.ref_tag }}
+
+      - name: Push Docker Image to DockerHub
+        if: success() && startsWith(github.ref, 'refs/tags/')
+        run: |
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/clone-api:${{ steps.docker_tags.outputs.sha_tag }}
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/clone-api:${{ steps.docker_tags.outputs.ref_tag }}
+
       - name: Clean up Docker
         if: always()
         run: |
@@ -205,7 +235,3 @@ jobs:
       - name: Failure Message
         if: failure()
         run: echo "CI Pipeline unsuccessful"
-
-      - name: Push the Image to DockerHub
-        if: success()
-        run: echo "This step currently in progress"
