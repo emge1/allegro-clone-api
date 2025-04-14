@@ -139,6 +139,7 @@ POSTGRES_DB=postgres_db
 GF_SECURITY_ADMIN_PASSWORD=gf_security_admin_password
 
 ENVIRONMENT=production  # or development
+WAIT_FOR_DB=true  # or false, if standalone
 ```
 And run docker compose:
 ```bash
