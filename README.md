@@ -40,12 +40,12 @@ functionality and simulate real-world payment processes.
 * Serializers and views for handling data and API endpoints.
 * Containerization using Docker:
   * Optimized setup with **multi-stage build**, lightweight base images (`python:3.11-slim`), `.dockerignore`, and clean layer structure
-  * Final API image size: **~266 MB**
+  * Final API image size: **~266 MB** (including sample data)
   * **Secure runtime**: non-root user + Docker `HEALTHCHECK`
   * Universal execution: supports **Docker Compose**, **Kubernetes**, and standalone runs
 * Test coverage to ensure reliability.
 * Integration with Github Actions: 
-  * CI workflow, including unit & integration testing, Docker image building, and built-in security scanning with Trivy
+  * CI workflow, including unit & integration testing, Docker image building, built-in security scanning with Trivy and, if success, pushing the image to DockerHub
   * CD pipeline for automated deployment to AWS and Vercel, including Docker image pushes and Terraform-based infrastructure updates (in progress)
 * Support for both local development and production environments using Docker and docker-compose.
 * Development logging outputs debug-level logs to the console for effective debugging with Django Debug Toolbar.
