@@ -13,9 +13,8 @@ env:
   REPO_BRANCH: main
 
 jobs:
-  ci:
+  build:
     runs-on: ubuntu-latest
-
     env:
       DJANGO_SETTINGS_MODULE: config.settings.ci
 
@@ -33,7 +32,7 @@ jobs:
         run: |
           docker build --build-arg REQUIREMENTS=requirements/development.txt -t ci-image .
 
-      - name: Scan Docker image with Trivy
+      - name: Security scan Docker image with Trivy
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: ci-image
@@ -48,7 +47,31 @@ jobs:
           name: trivy-scan-report
           path: trivy-report.json
 
-      - name: Run Tests
+      - name: Save Docker image
+        run: docker save ci-image > ci-image.tar
+
+      - name: Upload Docker image
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-image
+          path: ci-image.tar
+
+  unit-tests:
+    runs-on: ubuntu-latest
+    needs: build
+    env:
+      DJANGO_SETTINGS_MODULE: config.settings.ci
+
+    steps:
+      - name: Download Docker image
+        uses: actions/download-artifact@v4
+        with:
+          name: ci-image
+
+      - name: Load Docker image
+        run: docker load < ci-image.tar
+
+      - name: Run Unit Tests
         run: |
           docker run --rm --user root \
             -e DJANGO_SETTINGS_MODULE=config.settings.ci \
@@ -61,15 +84,74 @@ jobs:
             sh -c "
               python manage.py makemigrations &&
               python manage.py migrate &&
-              pytest --junitxml=test-reports/results.xml
+              pytest -m "not integration" --junitxml=test-reports/unit.xml
             "
 
-      - name: Upload Test Report
+      - name: Upload Unit Test Report
         uses: actions/upload-artifact@v4
         with:
-          name: test-reports
-          path: test-reports/results.xml
+          name: unit-test-report
+          path: test-reports/unit.xml
 
+  integration-tests:
+    runs-on: ubuntu-latest
+    needs: build
+    env:
+      DJANGO_SETTINGS_MODULE: config.settings.ci
+
+    steps:
+      - name: Download Docker image
+        uses: actions/download-artifact@v4
+        with:
+          name: ci-image
+
+      - name: Load Docker image
+        run: docker load < ci-image.tar
+
+      - name: Run Integration Tests
+        run: |
+          docker run --rm --user root \
+            -e DJANGO_SETTINGS_MODULE=config.settings.ci \
+            -e SECRET_KEY=${{ secrets.SECRET_KEY }} \
+            -e ENVIRONMENT=${{ secrets.ENVIRONMENT }} \
+            -v ${{ github.workspace }}:/workspace \
+            -w /workspace \
+            --entrypoint "" \
+            ci-image \
+            sh -c "
+              python manage.py makemigrations &&
+              python manage.py migrate &&
+              pytest -m "integration" --junitxml=test-reports/integration.xml
+            "
+
+      - name: Upload Integration Test Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: integration-test-report
+          path: test-reports/integration.xml
+
+  e2e-tests:
+    runs-on: ubuntu-latest
+    needs: build
+    env:
+      DJANGO_SETTINGS_MODULE: config.settings.ci
+
+    steps:
+      - name: Run E2E Tests
+        run: echo "This step currently in progress"
+
+      - name: Upload E2E Test Report
+        run: echo "This step currently in progress"
+
+
+  post-checks:
+    runs-on: ubuntu-latest
+    needs: [unit-tests, integration-tests, e2e-tests]
+    if: always()
+    env:
+      DJANGO_SETTINGS_MODULE: config.settings.ci
+
+    steps:
       - name: Clean up Docker
         if: always()
         run: |
@@ -97,3 +179,7 @@ jobs:
       - name: Failure Message
         if: failure()
         run: echo "CI Pipeline unsuccessful"
+
+      - name: Push the Image to DockerHub
+        if: success()
+        run: echo "This step currently in progress"
