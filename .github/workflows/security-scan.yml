@@ -55,7 +55,7 @@ jobs:
       - name: Clean Workspace
         if: always()
         run: |
-          docker run --rm \
+          docker run --rm --user root \
             -e DJANGO_SETTINGS_MODULE=config.settings.ci \
             -e SECRET_KEY=${{ secrets.SECRET_KEY }} \
             -e ENVIRONMENT=${{ secrets.ENVIRONMENT }} \
