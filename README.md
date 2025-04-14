@@ -38,6 +38,11 @@ functionality and simulate real-world payment processes.
 ## Key functionalities
 * Models for core e-commerce elements like users, products, and orders.
 * Serializers and views for handling data and API endpoints.
+* Containerization using Docker:
+  * Optimized setup with **multi-stage build**, lightweight base images (`python:3.11-slim`), `.dockerignore`, and clean layer structure
+  * Final API image size: **~266 MB**
+  * **Secure runtime**: non-root user + Docker `HEALTHCHECK`
+  * Universal execution: supports **Docker Compose**, **Kubernetes**, and standalone runs
 * Test coverage to ensure reliability.
 * Integration with Github Actions: 
   * CI workflow, including testing and building,
@@ -139,6 +144,7 @@ POSTGRES_DB=postgres_db
 GF_SECURITY_ADMIN_PASSWORD=gf_security_admin_password
 
 ENVIRONMENT=production  # or development
+WAIT_FOR_DB=true  # or false, if standalone
 ```
 And run docker compose:
 ```bash
