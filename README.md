@@ -40,7 +40,7 @@ functionality and simulate real-world payment processes.
 * Serializers and views for handling data and API endpoints.
 * Containerization using Docker:
   * Optimized setup with **multi-stage build**, lightweight base images (`python:3.11-slim`), `.dockerignore`, and clean layer structure
-  * Final API image size: **~266 MB**
+  * Final API image size: **~266 MB** (including sample data)
   * **Secure runtime**: non-root user + Docker `HEALTHCHECK`
   * Universal execution: supports **Docker Compose**, **Kubernetes**, and standalone runs
 * Test coverage to ensure reliability.
