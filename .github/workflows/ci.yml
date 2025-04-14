@@ -33,7 +33,7 @@ jobs:
           docker build --build-arg REQUIREMENTS=requirements/development.txt -t ci-image .
 
       - name: Security scan Docker image with Trivy
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@0.30.0
         with:
           image-ref: ci-image
           severity: CRITICAL
@@ -63,6 +63,12 @@ jobs:
       DJANGO_SETTINGS_MODULE: config.settings.ci
 
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.REPO_URL }}
+          ref: ${{ env.REPO_BRANCH }}
+
       - name: Download Docker image
         uses: actions/download-artifact@v4
         with:
@@ -100,6 +106,12 @@ jobs:
       DJANGO_SETTINGS_MODULE: config.settings.ci
 
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.REPO_URL }}
+          ref: ${{ env.REPO_BRANCH }}
+
       - name: Download Docker image
         uses: actions/download-artifact@v4
         with:
@@ -152,6 +164,20 @@ jobs:
       DJANGO_SETTINGS_MODULE: config.settings.ci
 
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.REPO_URL }}
+          ref: ${{ env.REPO_BRANCH }}
+
+      - name: Download Docker image
+        uses: actions/download-artifact@v4
+        with:
+          name: ci-image
+
+      - name: Load Docker image
+        run: docker load < ci-image.tar
+
       - name: Clean up Docker
         if: always()
         run: |
