@@ -45,8 +45,7 @@ functionality and simulate real-world payment processes.
   * Universal execution: supports **Docker Compose**, **Kubernetes**, and standalone runs
 * Test coverage to ensure reliability.
 * Integration with Github Actions: 
-  * CI workflow, including testing and building,
-  * Trivy to ensure cybersecurity by scanning Docker images on each pull request and main branch push,
+  * CI workflow, including unit & integration testing, Docker image building, and built-in security scanning with Trivy
   * CD pipeline for automated deployment to AWS and Vercel, including Docker image pushes and Terraform-based infrastructure updates (in progress)
 * Support for both local development and production environments using Docker and docker-compose.
 * Development logging outputs debug-level logs to the console for effective debugging with Django Debug Toolbar.
