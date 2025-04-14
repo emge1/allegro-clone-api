@@ -26,6 +26,9 @@ jobs:
           repository: ${{ env.REPO_URL }}
           ref: ${{ env.REPO_BRANCH  }}
 
+      - name: Lint Code
+        run: echo "This step currently in progress"
+
       - name: Build Docker Image
         run: |
           docker build --build-arg REQUIREMENTS=requirements/development.txt -t ci-image .
