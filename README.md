@@ -137,6 +137,7 @@ EMAIL_HOST_USER=your_email@gmail.com
 EMAIL_HOST_PASSWORD=your_password
 
 DB_HOST=db_production
+DB_PORT=5432
 POSTGRES_USER=postgres_user
 POSTGRES_PASSWORD=postgres_password
 POSTGRES_DB=postgres_db
