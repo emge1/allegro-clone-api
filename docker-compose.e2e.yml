@@ -10,9 +10,11 @@ services:
     environment:
       DJANGO_SETTINGS_MODULE: config.settings.development
       ENVIRONMENT: ${ENVIRONMENT}
+      SECRET_KEY: ${SECRET_KEY}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
+      DB_PORT:  ${DB_PORT}
       DB_HOST: db_postgres
     depends_on:
       - db_production
