@@ -29,6 +29,9 @@ urlpatterns = [
     # Core
     path('admin/', admin.site.urls),
 
+    # Probes - platform
+    path("", include("v1.health.urls")),
+
 ]
 
 if settings.DEBUG:
