@@ -4,7 +4,6 @@ FROM python:3.11.7-slim AS builder
 ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
-ARG REQUIREMENTS=requirements/development.txt
 RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     build-essential \
@@ -14,7 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements /app/requirements
-RUN pip install --no-cache-dir -r /app/${REQUIREMENTS}
+RUN pip install --no-cache-dir -r /app/requirements/production.txt
 
 COPY README.md /app/README.md
 COPY v1 /app/v1
