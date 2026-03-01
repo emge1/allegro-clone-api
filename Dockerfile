@@ -46,5 +46,3 @@ USER nonrootuser
 
 EXPOSE 8000
 
-HEALTHCHECK CMD curl --fail http://localhost:8000/healthz || exit 1
-
