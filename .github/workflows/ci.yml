@@ -44,15 +44,24 @@ jobs:
           trivy image \
             --severity CRITICAL \
             --ignore-unfixed \
-            --exit-code 1 \
             --format json \
             -o trivy-report.json \
             ci-image
+
       - name: Upload Trivy scan report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: trivy-scan-report
           path: trivy-report.json
+
+      - name: Fail if CRITICAL vulnerabilities found
+        run: |
+          CRITICAL_COUNT=$(jq '[.Results[].Vulnerabilities[]? | select(.Severity=="CRITICAL")] | length' trivy-report.json)
+          if [ "$CRITICAL_COUNT" -gt 0 ]; then
+            echo "CRITICAL vulnerabilities found: $CRITICAL_COUNT"
+            exit 1
+          fi
 
       - name: Save Docker image
         run: docker save ci-image > ci-image.tar
