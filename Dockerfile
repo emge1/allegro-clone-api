@@ -1,5 +1,5 @@
 # --- Builder stage ---
-FROM python:3.11.7-slim AS builder
+FROM python:3.11-slim AS builder
 
 ENV PYTHONUNBUFFERED=1
 WORKDIR /app
@@ -17,7 +17,7 @@ COPY README.md /app/README.md
 COPY v1 /app/v1
 
 # --- Runtime stage ---
-FROM python:3.11.7-slim
+FROM python:3.11-slim
 
 #LABEL maintainer="E <my@email.com>" \
 #      version="1.0.0" \
