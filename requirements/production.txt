@@ -2,3 +2,4 @@
 psycopg2==2.9.10
 prometheus-client==0.21.1
 gunicorn==25.1.0
+django-debug-toolbar==4.4.6

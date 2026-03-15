@@ -38,7 +38,10 @@ LOGGING = {
 
 INSTALLED_APPS.append('debug_toolbar')
 
-MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware', )
+MIDDLEWARE += [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'v1.middleware.metrics.PrometheusMetricsMiddleware',
+]
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
@@ -46,4 +49,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, '../media/')
 
-CORS_ORIGIN_WHITELIST = ['http://localhost:3000']
+CORS_ORIGIN_WHITELIST = ['http://localhost:3000', 'http://ui.dev.local']
