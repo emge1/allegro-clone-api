@@ -33,7 +33,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpq5 \
     && rm -rf /var/lib/apt/lists/*
 
-COPY --from=builder /usr/local /usr/local
+COPY --from=builder /usr/local/lib/python3.11 /usr/local/lib/python3.11
+COPY --from=builder /usr/local/bin /usr/local/bin
 COPY --from=builder /app/v1 /app/v1
 COPY --from=builder /app/README.md /app/README.md
 
