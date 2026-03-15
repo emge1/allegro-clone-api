@@ -43,7 +43,7 @@ if settings.DEBUG:
     ]
 
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-else:
-    urlpatterns += [
-        path('metrics/', metrics_view),
-    ]
+
+urlpatterns += [
+    path('metrics/', metrics_view),
+]
