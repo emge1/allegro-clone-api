@@ -47,7 +47,12 @@ INSTALLED_APPS = [
     "v1.health",
 ]
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = config(
+    "ALLOWED_HOSTS",
+    cast=Csv(),
+    default="*",
+)
+
 AUTH_USER_MODEL = 'accounts.User'
 
 MIDDLEWARE = [
@@ -137,9 +142,10 @@ USE_TZ = False
 
 CORS_ALLOWED_ORIGINS = config(
     "CORS_ALLOWED_ORIGINS",
-    default="http://localhost:3000",
     cast=Csv(),
+    default="",
 )
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
